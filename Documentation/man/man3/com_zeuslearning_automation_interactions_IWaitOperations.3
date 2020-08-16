@@ -1,0 +1,245 @@
+.TH "com.zeuslearning.automation.interactions.IWaitOperations" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.interactions.IWaitOperations \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBwaitForVisibilityOf\fP (Object element)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForVisibilityOf\fP (Object locator, int timeout)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForInvisibilityOf\fP (Object element)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForInvisibilityOf\fP (Object element, int timeout)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForElementToBeClickable\fP (Object element)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForElementToBeClickable\fP (Object element, int timeout)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForElementToBePresent\fP (Object element)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForElementToBePresent\fP (Object element, int timeout)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForNoOfWindows\fP (int numberOfWindows)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForScriptValueMatch\fP (String str, String script, \fBIExecuteJavascript\fP jsExec, int timeout)"
+.br
+.ti -1c
+.RI "boolean \fBwaitForScriptValueChange\fP (String str, String script, \fBIExecuteJavascript\fP jsExec, int timeout)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWaitOperations\&.waitForElementToBeClickable (Object element)"
+Wait until the element is not clickable (Max\&. timeout = default timeout)\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - return \fCtrue\fP once timed out\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwaitForElementToBeClickable(Object, int)\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWaitOperations\&.waitForElementToBeClickable (Object element, int timeout)"
+Wait until the element is not clickable (Max\&. timeout = timeout {param})\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.br
+\fItimeout\fP {int} - Maximum timeout in seconds\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - return \fCtrue\fP once timed out\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwaitForElementToBeClickable(Object)\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWaitOperations\&.waitForElementToBePresent (Object element)"
+Wait until the element is not present on the DOM (Max\&. timeout = default timeout)\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - return \fCtrue\fP once timed out\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwaitForElementToBePresent(Object, int)\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWaitOperations\&.waitForElementToBePresent (Object element, int timeout)"
+Wait until the element is not present on the DOM (Max\&. timeout = timeout {param})\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.br
+\fItimeout\fP {int} - Maximum timeout in seconds\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - return \fCtrue\fP once timed out\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwaitForElementToBePresent(Object)\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWaitOperations\&.waitForInvisibilityOf (Object element)"
+Wait until the element is visible (Max\&. timeout = default timeout)\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - return \fCtrue\fP once timed out\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwaitForInvisibilityOf(Object, int)\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWaitOperations\&.waitForInvisibilityOf (Object element, int timeout)"
+Wait until the element is visible (Max\&. timeout = timeout {param})\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.br
+\fItimeout\fP {int} - Maximum timeout in seconds\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - return \fCtrue\fP once timed out\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwaitForInvisibilityOf(Object)\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWaitOperations\&.waitForNoOfWindows (int numberOfWindows)"
+Wait until a new window is available\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fInumberOfWindows\fP {int} - Number of windows 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP once timed out\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWaitOperations\&.waitForVisibilityOf (Object element)"
+Wait until the element located by the locator is visible (Max\&. timeout = default timeout)\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - return \fCtrue\fP once timed out\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwaitForVisibilityOf(Object, int)\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWaitOperations\&.waitForVisibilityOf (Object locator, int timeout)"
+Wait until the element located by the locator is visible (Max\&. timeout = timeout {param})\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fItimeout\fP {int} - Maximum timeout in seconds\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - return \fCtrue\fP once timed out\&.
+.RE
+.PP
+\fBSee also:\fP
+.RS 4
+\fBwaitForVisibilityOf(Object)\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.FluentTimeout\fP, and \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Timeout\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

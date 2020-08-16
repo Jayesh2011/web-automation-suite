@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel test suite" parallel="classes"
+	thread-count="2">
+	<test name="Regression 1">
+		<parameter name="myBrowser" value="chrome" />
+		<parameter name="mode" value="gui" />
+		<parameter name="resolution" value="laptop" />
+		<classes>
+			<class
+				name="com.zeuslearning.automation.demo.UiAutomationImageBased" />
+		</classes>
+	</test>
+	<test name="Regression 2">
+		<parameter name="myBrowser" value="chrome" />
+		<parameter name="mode" value="gui" />
+		<parameter name="resolution" value="mobile" />
+		<classes>
+			<class
+				name="com.zeuslearning.automation.demo.UiAutomationImageBased" />
+		</classes>
+	</test>
+</suite>

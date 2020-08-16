@@ -1,0 +1,15 @@
+<map id="com.zeuslearning.automation.unittests.ObserveModeMultiTask" name="com.zeuslearning.automation.unittests.ObserveModeMultiTask">
+<area shape="rect" id="node2" href="$d4/d41/interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver.html" title="com.zeuslearning.automation.driver.\lIDriver" alt="" coords="1310,5,1541,47"/>
+<area shape="rect" id="node3" href="$dc/d90/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IQueryHtmlElement.html" title="com.zeuslearning.automation.interactions.\lIQueryHtmlElement" alt="" coords="441,67,708,108"/>
+<area shape="rect" id="node17" href="$dc/d41/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1QueryHtml.html" title="com.zeuslearning.automation.selenium.interactions.\lQueryHtml" alt="" coords="852,225,1175,267"/>
+<area shape="rect" id="node4" href="$db/d90/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IMouseOperations.html" title="com.zeuslearning.automation.interactions.\lIMouseOperations" alt="" coords="1292,216,1559,257"/>
+<area shape="rect" id="node6" href="$d9/d3a/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IVerifications.html" title="com.zeuslearning.automation.interactions.\lIVerifications" alt="" coords="1292,333,1559,375"/>
+<area shape="rect" id="node16" href="$d5/d26/classcom_1_1zeuslearning_1_1automation_1_1io_1_1ScreenCapture.html" title="com.zeuslearning.automation.io.\lScreenCapture" alt="" coords="1320,399,1531,440"/>
+<area shape="rect" id="node19" href="$d9/df4/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout.html" title="com.zeuslearning.automation.selenium.interactions.\lTimeout" alt="" coords="413,225,736,267"/>
+<area shape="rect" id="node8" href="$d5/d02/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IAlertOperations.html" title="com.zeuslearning.automation.interactions.\lIAlertOperations" alt="" coords="1292,464,1559,505"/>
+<area shape="rect" id="node9" href="$d5/da9/classcom_1_1zeuslearning_1_1automation_1_1io_1_1ExcelFileOps.html" title="com.zeuslearning.automation.io.\lExcelFileOps" alt="" coords="1320,529,1531,571"/>
+<area shape="rect" id="node10" href="$dc/d2c/classcom_1_1zeuslearning_1_1automation_1_1io_1_1BasicFileOps.html" title="com.zeuslearning.automation.io.\lBasicFileOps" alt="" coords="908,467,1119,508"/>
+<area shape="rect" id="node11" href="$d4/da3/interfacecom_1_1zeuslearning_1_1automation_1_1io_1_1IInputOutputOps.html" title="com.zeuslearning.automation.io.\lIInputOutputOps" alt="" coords="469,485,680,527"/>
+<area shape="rect" id="node20" href="$d1/de3/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations.html" title="com.zeuslearning.automation.interactions.\lIWaitOperations" alt="" coords="5,539,272,580"/>
+<area shape="rect" id="node23" href="$d3/d71/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWindowOperations.html" title="com.zeuslearning.automation.interactions.\lIWindowOperations" alt="" coords="1292,764,1559,805"/>
+</map>

@@ -1,0 +1,2 @@
+java -jar selenium-server-standalone-2.53.1.jar -role node -port 5554 -hub http://192.168.21.50:4444/grid/register -Dwebdriver.chrome.driver=../chromedriver/windows/chromedriver.exe -Dwebdriver.ie.driver=../iedriver/IEDriverServer.exe -Dwebdriver.gecko.driver=../geckodriver/windows/geckodriver.exe
+pause

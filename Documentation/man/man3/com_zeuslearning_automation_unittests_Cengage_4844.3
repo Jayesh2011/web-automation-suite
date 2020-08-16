@@ -1,0 +1,134 @@
+.TH "com.zeuslearning.automation.unittests.Cengage_4844" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.unittests.Cengage_4844 \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBverifyDefaultStateTraining\fP ()  throws Exception     "
+.br
+.ti -1c
+.RI "void \fBverifyDefaultStateExam1\fP ()  throws Exception     "
+.br
+.ti -1c
+.RI "void \fBverifyDefaultStateExam2\fP ()  throws Exception     "
+.br
+.ti -1c
+.RI "void \fBmodeApply\fP ()  throws Exception     "
+.br
+.ti -1c
+.RI "void \fBmodeIntro\fP ()  throws IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException     "
+.br
+.ti -1c
+.RI "void \fBmodeObserve\fP ()  throws Exception     "
+.br
+.ti -1c
+.RI "void \fBmodePractice\fP ()  throws Exception     "
+.br
+.ti -1c
+.RI "void \fBmodeExam1\fP ()  throws Exception     "
+.br
+.ti -1c
+.RI "void \fBmodeExam2\fP ()  throws Exception     "
+.br
+.ti -1c
+.RI "void \fBlaunchModes\fP (String path, String mode)  throws Exception     "
+.br
+.ti -1c
+.RI "void \fBwaitforFileTab\fP ()"
+.br
+.ti -1c
+.RI "void \fBpathway_1\fP ()  throws InterruptedException 	"
+.br
+.ti -1c
+.RI "void \fBpathway_2\fP ()  throws InterruptedException 	"
+.br
+.ti -1c
+.RI "void \fBpathway_3\fP ()  throws InterruptedException 	"
+.br
+.ti -1c
+.RI "void \fBpathway_4\fP ()  throws InterruptedException 	"
+.br
+.ti -1c
+.RI "void \fBclickOkSubmitPopup\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBcheckEndofObserve\fP ()  throws InterruptedException 	"
+.br
+.ti -1c
+.RI "void \fBtearDown\fP ()"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBIDriver\fP \fBiDriver\fP = new \fBDriver\fP('src/java/com/zeuslearning/automation/Config\&.properties')"
+.br
+.ti -1c
+.RI "WebDriver \fBdriver\fP = (WebDriver) iDriver\&.getDriver('')"
+.br
+.ti -1c
+.RI "\fBIWindowOperations\fP \fBbrowser\fP = new \fBBrowserWindow\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIKeyboardOperations\fP \fBkeyboardHandle\fP = new \fBKeyboard\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIMouseOperations\fP \fBmouseHandle\fP = new \fBMouse\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIDragDropOperations\fP \fBdrag\fP = new \fBDragDrop\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIQueryHtmlElement\fP \fBqueryHtml\fP = new \fBQueryHtml\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIVerifications\fP \fBverify\fP = new \fBVerifications\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIWaitOperations\fP \fBwait\fP = new \fBTimeout\fP(driver)"
+.br
+.ti -1c
+.RI "String [] \fBmodes\fP = {'Apply'}"
+.br
+.ti -1c
+.RI "int \fBflagMode\fP = 0"
+.br
+.ti -1c
+.RI "String [] \fBpathWays\fP = {'pathway_1', 'pathway_2', 'pathway_3', 'pathway_4'}"
+.br
+.ti -1c
+.RI "String \fBsheetClassName\fP"
+.br
+.ti -1c
+.RI "String \fBtabClassName\fP"
+.br
+.ti -1c
+.RI "String \fBorientation\fP"
+.br
+.ti -1c
+.RI "String \fBtitle\fP"
+.br
+.ti -1c
+.RI "int \fBpathWayCount\fP = 0"
+.br
+.ti -1c
+.RI "Point \fBpoint\fP"
+.br
+.ti -1c
+.RI "String \fBtrainingModeUrl\fP = 'http://kepler\&.cengage\&.release\&.zeuslearning\&.mumbai/ZEUS/Preview/Training?taskIds=4863&type=2&batch_names=v_batch_24&vendor_task_list=4844'"
+.br
+.ti -1c
+.RI "String \fBexamModeUrl\fP = 'http://kepler\&.cengage\&.release\&.zeuslearning\&.mumbai/ZEUS/Preview/Exam?taskIds=4863&type=1&batch_names=v_batch_24&vendor_task_list=4844'"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

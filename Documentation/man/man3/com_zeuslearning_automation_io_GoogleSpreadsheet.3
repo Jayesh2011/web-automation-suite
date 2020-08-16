@@ -1,0 +1,94 @@
+.TH "com.zeuslearning.automation.io.GoogleSpreadsheet" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.io.GoogleSpreadsheet \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.zeuslearning\&.automation\&.io\&.ExcelFileOps\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGoogleSpreadsheet\fP (String pathToPermissions, String serviceAccountId)  throws GeneralSecurityException, IOException "
+.br
+.ti -1c
+.RI "void \fBaccessSpreadsheet\fP (String spreadsheetName)  throws IOException, ServiceException "
+.br
+.ti -1c
+.RI "void \fBselectWorksheet\fP (String worksheetName)"
+.br
+.ti -1c
+.RI "void \fBaddNewWorksheet\fP (String worksheetName)  throws IOException, ServiceException "
+.br
+.ti -1c
+.RI "String [][] \fBreadCurrentWorksheet\fP ()  throws IOException, ServiceException, URISyntaxException "
+.br
+.ti -1c
+.RI "void \fBwriteToCurrentWorkSheet\fP (String columnHeader[], String data[][])  throws IOException, ServiceException "
+.br
+.ti -1c
+.RI "void \fBupdateCurrentWorksheet\fP (String columnHeader[], String data[][])  throws IOException, ServiceException "
+.br
+.ti -1c
+.RI "void \fBaddNewSpreadsheet\fP (String spreadsheetTitle)  throws IOException, ServiceException "
+.br
+.in -1c
+.SS "Package Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBupdateWorksheetTitle\fP (String worksheetTitle)  throws ServiceException, IOException "
+.br
+.ti -1c
+.RI "void \fBdeleteWorksheet\fP ()  throws IOException, ServiceException "
+.br
+.ti -1c
+.RI "void \fBsetWorksheetSize\fP (int noOfRows, int noOfColumns)"
+.br
+.ti -1c
+.RI "void \fBsetWorksheetSize\fP (String worksheetName, int noOfRows, int noOfColumns)"
+.br
+.ti -1c
+.RI "String \fBgetWorksheetName\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetNoOfRows\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetNoOfColumns\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "SpreadsheetEntry \fBspreadsheet\fP = null"
+.br
+.ti -1c
+.RI "URL \fBSPREADSHEET_FEED_URL\fP = null"
+.br
+.ti -1c
+.RI "WorksheetEntry \fBworksheet\fP = null"
+.br
+.ti -1c
+.RI "WorksheetFeed \fBworksheetFeed\fP = null"
+.br
+.ti -1c
+.RI "List< WorksheetEntry > \fBworksheets\fP = null"
+.br
+.ti -1c
+.RI "SpreadsheetService \fBservice\fP = null"
+.br
+.ti -1c
+.RI "URL \fBworksheetFeedUrl\fP = null"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

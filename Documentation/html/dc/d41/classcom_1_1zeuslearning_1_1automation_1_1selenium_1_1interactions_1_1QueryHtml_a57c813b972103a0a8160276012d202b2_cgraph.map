@@ -1,0 +1,4 @@
+<map id="com.zeuslearning.automation.selenium.interactions.QueryHtml.getDimensionsOfElementLocatedBy" name="com.zeuslearning.automation.selenium.interactions.QueryHtml.getDimensionsOfElementLocatedBy">
+<area shape="rect" id="node2" href="$dc/d41/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1QueryHtml.html#a21ff6c1d862318a3e5beff87a1336a75" title="com.zeuslearning.automation.selenium.interactions.\lQueryHtml.findElement" alt="" coords="376,5,699,47"/>
+<area shape="rect" id="node3" href="$d9/df4/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout.html#a5b1fb9f2a2d0d61ec2b882269a3826d5" title="com.zeuslearning.automation.selenium.interactions.\lTimeout.waitForElementToBePresent" alt="" coords="747,5,1069,47"/>
+</map>

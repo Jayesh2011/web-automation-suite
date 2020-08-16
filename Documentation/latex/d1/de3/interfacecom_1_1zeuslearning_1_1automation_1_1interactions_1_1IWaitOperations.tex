@@ -1,0 +1,259 @@
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations}{}\section{com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations Interface Reference}
+\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations}\index{com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations@{com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations}}
+
+
+Inheritance diagram for com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/dd1/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_ad52fa72b8387c5172714bdec02b754a9}{wait\+For\+Visibility\+Of} (Object element)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a608da544ffa2ea81c99c5cb17e8e60ba}{wait\+For\+Visibility\+Of} (Object locator, int timeout)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a92e178778c5219ee00b59f5d8cdc8f94}{wait\+For\+Invisibility\+Of} (Object element)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a816b3d7ef80895d1cf54cc657a10204e}{wait\+For\+Invisibility\+Of} (Object element, int timeout)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a224899aff622d5bbc4f7e76761413dc9}{wait\+For\+Element\+To\+Be\+Clickable} (Object element)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a8b6cc8c4332c681818630d1665f79c44}{wait\+For\+Element\+To\+Be\+Clickable} (Object element, int timeout)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a37e642af4e56132b564fa67e34e973d4}{wait\+For\+Element\+To\+Be\+Present} (Object element)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a768e53257a1c960d74e048b1aa5fe145}{wait\+For\+Element\+To\+Be\+Present} (Object element, int timeout)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a609fd66e35b8217e83f499999785b370}{wait\+For\+No\+Of\+Windows} (int number\+Of\+Windows)
+\item 
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a27886e71d66cc30d3976fe1042b32ac9}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a27886e71d66cc30d3976fe1042b32ac9} 
+boolean {\bfseries wait\+For\+Script\+Value\+Match} (String str, String script, \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IExecuteJavascript}{I\+Execute\+Javascript} js\+Exec, int timeout)
+\item 
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a909a362344d14a24262c26197c87d230}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a909a362344d14a24262c26197c87d230} 
+boolean {\bfseries wait\+For\+Script\+Value\+Change} (String str, String script, \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IExecuteJavascript}{I\+Execute\+Javascript} js\+Exec, int timeout)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a224899aff622d5bbc4f7e76761413dc9}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a224899aff622d5bbc4f7e76761413dc9} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}!wait\+For\+Element\+To\+Be\+Clickable@{wait\+For\+Element\+To\+Be\+Clickable}}
+\index{wait\+For\+Element\+To\+Be\+Clickable@{wait\+For\+Element\+To\+Be\+Clickable}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}}
+\subsubsection{\texorpdfstring{wait\+For\+Element\+To\+Be\+Clickable()}{waitForElementToBeClickable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations.\+wait\+For\+Element\+To\+Be\+Clickable (\begin{DoxyParamCaption}\item[{Object}]{element }\end{DoxyParamCaption})}
+
+Wait until the element is not clickable (Max. timeout = default timeout).
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Path to the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ return {\ttfamily true} once timed out.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a8b6cc8c4332c681818630d1665f79c44}{wait\+For\+Element\+To\+Be\+Clickable(\+Object, int)} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1FluentTimeout_ad9a51efbd23459b848e9640fe0f9a3db}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Fluent\+Timeout}, and \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout_a6c5ac29cf210e232ac851ebe52b9c226}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Timeout}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a8b6cc8c4332c681818630d1665f79c44}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a8b6cc8c4332c681818630d1665f79c44} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}!wait\+For\+Element\+To\+Be\+Clickable@{wait\+For\+Element\+To\+Be\+Clickable}}
+\index{wait\+For\+Element\+To\+Be\+Clickable@{wait\+For\+Element\+To\+Be\+Clickable}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}}
+\subsubsection{\texorpdfstring{wait\+For\+Element\+To\+Be\+Clickable()}{waitForElementToBeClickable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations.\+wait\+For\+Element\+To\+Be\+Clickable (\begin{DoxyParamCaption}\item[{Object}]{element,  }\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+Wait until the element is not clickable (Max. timeout = timeout \{param\}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Path to the element. \\
+\hline
+{\em timeout} & \{int\} -\/ Maximum timeout in seconds.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ return {\ttfamily true} once timed out.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a224899aff622d5bbc4f7e76761413dc9}{wait\+For\+Element\+To\+Be\+Clickable(\+Object)} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1FluentTimeout_adce608907ac37820819c4e4f7120c733}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Fluent\+Timeout}, and \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout_a704a4c52aeb1fc87555e0f17b2a86cfe}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Timeout}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a37e642af4e56132b564fa67e34e973d4}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a37e642af4e56132b564fa67e34e973d4} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}!wait\+For\+Element\+To\+Be\+Present@{wait\+For\+Element\+To\+Be\+Present}}
+\index{wait\+For\+Element\+To\+Be\+Present@{wait\+For\+Element\+To\+Be\+Present}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}}
+\subsubsection{\texorpdfstring{wait\+For\+Element\+To\+Be\+Present()}{waitForElementToBePresent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations.\+wait\+For\+Element\+To\+Be\+Present (\begin{DoxyParamCaption}\item[{Object}]{element }\end{DoxyParamCaption})}
+
+Wait until the element is not present on the D\+OM (Max. timeout = default timeout).
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Path to the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ return {\ttfamily true} once timed out.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a768e53257a1c960d74e048b1aa5fe145}{wait\+For\+Element\+To\+Be\+Present(\+Object, int)} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1FluentTimeout_a83338a2e6ff1028ec988d6122e4afeab}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Fluent\+Timeout}, and \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout_a5b1fb9f2a2d0d61ec2b882269a3826d5}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Timeout}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a768e53257a1c960d74e048b1aa5fe145}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a768e53257a1c960d74e048b1aa5fe145} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}!wait\+For\+Element\+To\+Be\+Present@{wait\+For\+Element\+To\+Be\+Present}}
+\index{wait\+For\+Element\+To\+Be\+Present@{wait\+For\+Element\+To\+Be\+Present}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}}
+\subsubsection{\texorpdfstring{wait\+For\+Element\+To\+Be\+Present()}{waitForElementToBePresent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations.\+wait\+For\+Element\+To\+Be\+Present (\begin{DoxyParamCaption}\item[{Object}]{element,  }\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+Wait until the element is not present on the D\+OM (Max. timeout = timeout \{param\}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Path to the element. \\
+\hline
+{\em timeout} & \{int\} -\/ Maximum timeout in seconds.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ return {\ttfamily true} once timed out.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a37e642af4e56132b564fa67e34e973d4}{wait\+For\+Element\+To\+Be\+Present(\+Object)} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1FluentTimeout_afce3a66e8c4bab59f37be96fd45eeec3}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Fluent\+Timeout}, and \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout_a42bc49d29d2f69d50650ec4c9d80eec2}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Timeout}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a92e178778c5219ee00b59f5d8cdc8f94}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a92e178778c5219ee00b59f5d8cdc8f94} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}!wait\+For\+Invisibility\+Of@{wait\+For\+Invisibility\+Of}}
+\index{wait\+For\+Invisibility\+Of@{wait\+For\+Invisibility\+Of}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}}
+\subsubsection{\texorpdfstring{wait\+For\+Invisibility\+Of()}{waitForInvisibilityOf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations.\+wait\+For\+Invisibility\+Of (\begin{DoxyParamCaption}\item[{Object}]{element }\end{DoxyParamCaption})}
+
+Wait until the element is visible (Max. timeout = default timeout).
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Path to the element.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ return {\ttfamily true} once timed out.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a816b3d7ef80895d1cf54cc657a10204e}{wait\+For\+Invisibility\+Of(\+Object, int)} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1FluentTimeout_ad385151878bb0bd5e034cb4769c206f5}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Fluent\+Timeout}, and \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout_adefb45ce06aba9bedc30a707f41ebe3f}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Timeout}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a816b3d7ef80895d1cf54cc657a10204e}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a816b3d7ef80895d1cf54cc657a10204e} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}!wait\+For\+Invisibility\+Of@{wait\+For\+Invisibility\+Of}}
+\index{wait\+For\+Invisibility\+Of@{wait\+For\+Invisibility\+Of}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}}
+\subsubsection{\texorpdfstring{wait\+For\+Invisibility\+Of()}{waitForInvisibilityOf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations.\+wait\+For\+Invisibility\+Of (\begin{DoxyParamCaption}\item[{Object}]{element,  }\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+Wait until the element is visible (Max. timeout = timeout \{param\}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Path to the element. \\
+\hline
+{\em timeout} & \{int\} -\/ Maximum timeout in seconds.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ return {\ttfamily true} once timed out.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a92e178778c5219ee00b59f5d8cdc8f94}{wait\+For\+Invisibility\+Of(\+Object)} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1FluentTimeout_aa8c541ab4503e1c0bb835545e4ad717d}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Fluent\+Timeout}, and \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout_aa8e8bb7ba589f1c9f4fbf8fd245e3028}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Timeout}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a609fd66e35b8217e83f499999785b370}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a609fd66e35b8217e83f499999785b370} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}!wait\+For\+No\+Of\+Windows@{wait\+For\+No\+Of\+Windows}}
+\index{wait\+For\+No\+Of\+Windows@{wait\+For\+No\+Of\+Windows}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}}
+\subsubsection{\texorpdfstring{wait\+For\+No\+Of\+Windows()}{waitForNoOfWindows()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations.\+wait\+For\+No\+Of\+Windows (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Windows }\end{DoxyParamCaption})}
+
+Wait until a new window is available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Windows} & \{int\} -\/ Number of windows \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ Returns {\ttfamily true} once timed out. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1FluentTimeout_a9d12d8da29ae600e1955e244a79f2ec0}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Fluent\+Timeout}, and \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout_a82895e2aaa48ce6d3d8fecd0d2042db6}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Timeout}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_ad52fa72b8387c5172714bdec02b754a9}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_ad52fa72b8387c5172714bdec02b754a9} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}!wait\+For\+Visibility\+Of@{wait\+For\+Visibility\+Of}}
+\index{wait\+For\+Visibility\+Of@{wait\+For\+Visibility\+Of}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}}
+\subsubsection{\texorpdfstring{wait\+For\+Visibility\+Of()}{waitForVisibilityOf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations.\+wait\+For\+Visibility\+Of (\begin{DoxyParamCaption}\item[{Object}]{element }\end{DoxyParamCaption})}
+
+Wait until the element located by the locator is visible (Max. timeout = default timeout).
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Path to the element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ return {\ttfamily true} once timed out.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a608da544ffa2ea81c99c5cb17e8e60ba}{wait\+For\+Visibility\+Of(\+Object, int)} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1FluentTimeout_a189fae4d5e9985013b0e1b65c3d73d1f}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Fluent\+Timeout}, and \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout_a327e77cb8ede06a2f7eef9d765812b7a}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Timeout}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a608da544ffa2ea81c99c5cb17e8e60ba}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_a608da544ffa2ea81c99c5cb17e8e60ba} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}!wait\+For\+Visibility\+Of@{wait\+For\+Visibility\+Of}}
+\index{wait\+For\+Visibility\+Of@{wait\+For\+Visibility\+Of}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Wait\+Operations}}
+\subsubsection{\texorpdfstring{wait\+For\+Visibility\+Of()}{waitForVisibilityOf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Wait\+Operations.\+wait\+For\+Visibility\+Of (\begin{DoxyParamCaption}\item[{Object}]{locator,  }\item[{int}]{timeout }\end{DoxyParamCaption})}
+
+Wait until the element located by the locator is visible (Max. timeout = timeout \{param\}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em locator} & \{Object\} -\/ Path to the element. \\
+\hline
+{\em timeout} & \{int\} -\/ Maximum timeout in seconds.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ return {\ttfamily true} once timed out.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations_ad52fa72b8387c5172714bdec02b754a9}{wait\+For\+Visibility\+Of(\+Object)} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1FluentTimeout_aa8a8afef31ddc1e6bcd5238005a732ec}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Fluent\+Timeout}, and \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout_ac615a524a7d7d0e00de7deabae2b6d9c}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Timeout}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+G\+I\+T/automation-\/common/src/java/com/zeuslearning/automation/interactions/I\+Wait\+Operations.\+java\end{DoxyCompactItemize}

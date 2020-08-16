@@ -1,0 +1,3 @@
+= Screen Verification =
+    viewport:
+        image file ../images/ImageBasedApproach/${resolution}/screen-${screenNumber}.png

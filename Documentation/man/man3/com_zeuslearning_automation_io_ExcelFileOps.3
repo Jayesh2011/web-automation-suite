@@ -1,0 +1,60 @@
+.TH "com.zeuslearning.automation.io.ExcelFileOps" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.io.ExcelFileOps \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.zeuslearning\&.automation\&.io\&.BasicFileOps\fP\&.
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.io\&.GoogleSpreadsheet\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String [][] \fBreadFile\fP (String filePath, String sheetName)"
+.br
+.ti -1c
+.RI "boolean \fBwrite\fP (String filePath, String[][] data)"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "String [][] \fBexcelData\fP = null"
+.br
+.ti -1c
+.RI "int \fBtotalNoOfRows\fP = 0"
+.br
+.ti -1c
+.RI "int \fBtotalNoOfCols\fP = 0"
+.br
+.ti -1c
+.RI "ArrayList< String > \fBarrayValue\fP"
+.br
+.ti -1c
+.RI "ArrayList< ArrayList< String > > \fBdataValues\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String [][] \fBreadXLSXFile\fP (InputStream excelFileToRead, String sheetName)"
+.br
+.ti -1c
+.RI "String [][] \fBreadXLSFile\fP (InputStream excelFileToRead, String sheetName)"
+.br
+.ti -1c
+.RI "void \fBarrayListToString\fP (ArrayList< ArrayList< String >> dataToBeConverted)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

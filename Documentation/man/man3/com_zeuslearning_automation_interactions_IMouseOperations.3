@@ -1,0 +1,504 @@
+.TH "com.zeuslearning.automation.interactions.IMouseOperations" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.interactions.IMouseOperations \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBclick\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBclick\fP (Object locator, boolean ctrlKey, boolean altKey, boolean shiftKey, boolean metaKey)"
+.br
+.ti -1c
+.RI "boolean \fBclickAllElementsLocatedBy\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBclickUsingOffset\fP (Object locator, int x, int y)"
+.br
+.ti -1c
+.RI "boolean \fBclickWithoutScrolling\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBcontextClick\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBcontextClickUsingCode\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBcontextClickUsingOffset\fP (Object locator, int x, int y)"
+.br
+.ti -1c
+.RI "boolean \fBcontextClickWithoutScrolling\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBdoubleClick\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBdoubleClickUsingCode\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBdoubleClickUsingCodeWithTwoClicks\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBdoubleClickUsingOffset\fP (Object locator, int x, int y)"
+.br
+.ti -1c
+.RI "boolean \fBdoubleClickWithoutScrolling\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBdragdropUsingMouse\fP (Object locator, int offsetX1, int offsetY1, int offsetX2, int offsetY2)"
+.br
+.ti -1c
+.RI "boolean \fBlistClick\fP (Object locator, int index)"
+.br
+.ti -1c
+.RI "boolean \fBmouseDown\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBmouseDown\fP (Object locator, int xOffset, int yOffset)"
+.br
+.ti -1c
+.RI "boolean \fBmouseMove\fP (Object locator, int xOffset, int yOffset)"
+.br
+.ti -1c
+.RI "Object \fBmouseOver\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBmouseUp\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBmouseUp\fP (Object locator, int clientX, int clientY)"
+.br
+.ti -1c
+.RI "boolean \fBscroll\fP (int xVal, int yVal)"
+.br
+.ti -1c
+.RI "boolean \fBscroll\fP (Object locator)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.click (Object locator)"
+Performs a click operation on the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element to be clicked\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.click (Object locator, boolean ctrlKey, boolean altKey, boolean shiftKey, boolean metaKey)"
+Performs a click operation on the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIctrlKey\fP {boolean} - Press control key if \fCtrue\fP 
+.br
+\fIaltKey\fP {boolean} - Press alt key if \fCtrue\fP 
+.br
+\fIshiftKey\fP {boolean} - Press shift key if \fCtrue\fP 
+.br
+\fImetaKey\fP {boolean} - Press meta key if \fCtrue\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.clickAllElementsLocatedBy (Object locator)"
+Performs a click operation on all the element located by the path specified by \fClocator\fP\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.clickUsingOffset (Object locator, int x, int y)"
+Performs a click on an element at x and y\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIx\fP {int} - Offset along the X-Axis w\&.r\&.t\&. element\&. 
+.br
+\fIy\fP {int} - Offset along the Y-Axis w\&.r\&.t\&. element\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.clickWithoutScrolling (Object locator)"
+Performs a click on the specified element without scrolling it
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.contextClick (Object locator)"
+Performs a context click on the specified element
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if context click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.contextClickUsingOffset (Object locator, int x, int y)"
+Performs a context click on an element at x and y\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIx\fP {int} - Offset along the X-Axis w\&.r\&.t\&. element\&. 
+.br
+\fIy\fP {int} - Offset along the Y-Axis w\&.r\&.t\&. element\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.contextClickWithoutScrolling (Object locator)"
+Performs a context click on the specified element without scrolling it
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if context click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.doubleClick (Object locator)"
+Performs a double-click operation on the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element to be double-clicked\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if double-click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.doubleClickUsingCode (Object locator)"
+Performs a double-click operation on the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element to be double-clicked\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if double-click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.doubleClickUsingCodeWithTwoClicks (Object locator)"
+Performs a double-click operation on the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element to be double-clicked\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if double-click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.doubleClickUsingOffset (Object locator, int x, int y)"
+Performs a double click on an element at x and y\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIx\fP {int} - Offset along the X-Axis w\&.r\&.t\&. element\&. 
+.br
+\fIy\fP {int} - Offset along the Y-Axis w\&.r\&.t\&. element\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.doubleClickWithoutScrolling (Object locator)"
+Performs a double-click operation on the element without scrolling it\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element to be double-clicked\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if double-click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.dragdropUsingMouse (Object locator, int offsetX1, int offsetY1, int offsetX2, int offsetY2)"
+Drag inside an element from one position\fCoffsetX1\fP along the X-Axis and by \fCoffsetY1\fP along the Y-Axis and move to \fCoffsetX2\fP along the X-Axis and to \fCoffsetY2\fP along the Y-Axis and drop\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Drag inside an Element present at the \fClocator\fP\&. 
+.br
+\fIoffsetX1\fP {int} - start position along the X-Axis\&. 
+.br
+\fIoffsetY1\fP {int} - start position along the Y-Axis\&. 
+.br
+\fIoffsetX2\fP {int} - end position along the X-Axis\&. 
+.br
+\fIoffsetY2\fP {int} - end position along the Y-Axis\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if drag operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.listClick (Object locator, int index)"
+Clicks on the element found using findElements\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the elements\&. 
+.br
+\fIindex\fP {int} - index number of the element to be clicked\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if click operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.mouseDown (Object locator)"
+Trigger mouse down event on the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if mouse over was successful, else \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.mouseDown (Object locator, int xOffset, int yOffset)"
+Trigger mouse down event on the element at \fCx\fP and \fCy\fP offset\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIxOffset\fP {int} 
+.br
+\fIyOffset\fP {int} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if mouse over was successful, else \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.mouseMove (Object locator, int xOffset, int yOffset)"
+Trigger mouse move event\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIxOffset\fP {int} 
+.br
+\fIyOffset\fP {int} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if mouse move is successful, else \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.mouseOver (Object locator)"
+Performs a mouse-over operation on the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns a Mouse pointer positioning object\&. Returns \fCfalse\fP if mouse-over operation is not successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.mouseUp (Object locator)"
+Trigger mouse up event\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if mouse up is successful, else false\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.mouseUp (Object locator, int clientX, int clientY)"
+Trigger mouse up event on the element at \fCx\fP and \fCy\fP client positions\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIclientX\fP {int} 
+.br
+\fIclientY\fP {int} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if mouse over was successful, else \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.scroll (int xVal, int yVal)"
+Scrolls the page by an offset\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIxVal\fP {int} - Offset along the X-Axis\&. 
+.br
+\fIyVal\fP {int} - Offset along the Y-Axis\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if scroll operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IMouseOperations\&.scroll (Object locator)"
+Scrolls the page such that the element is now in the view port\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if scroll operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Mouse\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

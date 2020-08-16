@@ -1,0 +1,116 @@
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver}{}\section{com.\+zeuslearning.\+automation.\+driver.\+I\+Driver Interface Reference}
+\label{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver}\index{com.\+zeuslearning.\+automation.\+driver.\+I\+Driver@{com.\+zeuslearning.\+automation.\+driver.\+I\+Driver}}
+
+
+Inheritance diagram for com.\+zeuslearning.\+automation.\+driver.\+I\+Driver\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a5662e9a248835364fcd27b0df392c3ea}{initialize\+Driver} (String browser\+Name)
+\item 
+Object \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a9c4bbcfcf72e1b1f556c7c8298dc8e2a}{get\+Driver} (String browser\+Name)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a1efada042eeea9713b798f713bfad650}{close\+Window} ()
+\item 
+void \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_abf28b69bbf3db2e4f4727c3498ccde0f}{quit\+Driver} ()
+\item 
+Properties \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a2530732df342f07743bed12deb55fee8}{get\+Config\+Properties} ()
+\item 
+void \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_aa5d03e791046040c033f5f2b57e002ad}{log\+Js\+Errors} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a1efada042eeea9713b798f713bfad650}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a1efada042eeea9713b798f713bfad650} 
+\index{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}!close\+Window@{close\+Window}}
+\index{close\+Window@{close\+Window}!com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}}
+\subsubsection{\texorpdfstring{close\+Window()}{closeWindow()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+driver.\+I\+Driver.\+close\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Close the active window.
+
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ Returns {\ttfamily true} if window is closed successfully. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1driver_1_1SeleniumDriver_a941fab966021a5f1c9b33544fc430b29}{com.\+zeuslearning.\+automation.\+selenium.\+driver.\+Selenium\+Driver}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a2530732df342f07743bed12deb55fee8}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a2530732df342f07743bed12deb55fee8} 
+\index{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}!get\+Config\+Properties@{get\+Config\+Properties}}
+\index{get\+Config\+Properties@{get\+Config\+Properties}!com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}}
+\subsubsection{\texorpdfstring{get\+Config\+Properties()}{getConfigProperties()}}
+{\footnotesize\ttfamily Properties com.\+zeuslearning.\+automation.\+driver.\+I\+Driver.\+get\+Config\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Read config properties
+
+\begin{DoxyReturn}{Returns}
+\{Properties\} -\/ Returns all the config properties set for a project. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1driver_1_1SeleniumDriver_afc8bad9a9bea7df6280ba685e52db540}{com.\+zeuslearning.\+automation.\+selenium.\+driver.\+Selenium\+Driver}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a9c4bbcfcf72e1b1f556c7c8298dc8e2a}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a9c4bbcfcf72e1b1f556c7c8298dc8e2a} 
+\index{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}!get\+Driver@{get\+Driver}}
+\index{get\+Driver@{get\+Driver}!com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}}
+\subsubsection{\texorpdfstring{get\+Driver()}{getDriver()}}
+{\footnotesize\ttfamily Object com.\+zeuslearning.\+automation.\+driver.\+I\+Driver.\+get\+Driver (\begin{DoxyParamCaption}\item[{String}]{browser\+Name }\end{DoxyParamCaption})}
+
+Get the driver object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & browser\+Name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} -\/ driver object. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1driver_1_1SeleniumDriver_a42a9e6ef86ef492717b3fed95e9f353f}{com.\+zeuslearning.\+automation.\+selenium.\+driver.\+Selenium\+Driver}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a5662e9a248835364fcd27b0df392c3ea}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_a5662e9a248835364fcd27b0df392c3ea} 
+\index{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}!initialize\+Driver@{initialize\+Driver}}
+\index{initialize\+Driver@{initialize\+Driver}!com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}}
+\subsubsection{\texorpdfstring{initialize\+Driver()}{initializeDriver()}}
+{\footnotesize\ttfamily void com.\+zeuslearning.\+automation.\+driver.\+I\+Driver.\+initialize\+Driver (\begin{DoxyParamCaption}\item[{String}]{browser\+Name }\end{DoxyParamCaption})}
+
+Initialize driver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & browser\+Name \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1driver_1_1SeleniumDriver_a187f5d9442edc299d894d1dbeafeda0d}{com.\+zeuslearning.\+automation.\+selenium.\+driver.\+Selenium\+Driver}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_aa5d03e791046040c033f5f2b57e002ad}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_aa5d03e791046040c033f5f2b57e002ad} 
+\index{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}!log\+Js\+Errors@{log\+Js\+Errors}}
+\index{log\+Js\+Errors@{log\+Js\+Errors}!com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}}
+\subsubsection{\texorpdfstring{log\+Js\+Errors()}{logJsErrors()}}
+{\footnotesize\ttfamily void com.\+zeuslearning.\+automation.\+driver.\+I\+Driver.\+log\+Js\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Logs JS errors in excel sheet. This works only for Firefox. 
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1driver_1_1SeleniumDriver_a1680730a2528d0c2029aca6c8eeacec3}{com.\+zeuslearning.\+automation.\+selenium.\+driver.\+Selenium\+Driver}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_abf28b69bbf3db2e4f4727c3498ccde0f}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver_abf28b69bbf3db2e4f4727c3498ccde0f} 
+\index{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}!quit\+Driver@{quit\+Driver}}
+\index{quit\+Driver@{quit\+Driver}!com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver@{com\+::zeuslearning\+::automation\+::driver\+::\+I\+Driver}}
+\subsubsection{\texorpdfstring{quit\+Driver()}{quitDriver()}}
+{\footnotesize\ttfamily void com.\+zeuslearning.\+automation.\+driver.\+I\+Driver.\+quit\+Driver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Quit the driver. 
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1driver_1_1SeleniumDriver_afc293d71e5e65ae445d5568accf2a253}{com.\+zeuslearning.\+automation.\+selenium.\+driver.\+Selenium\+Driver}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+G\+I\+T/automation-\/common/src/java/com/zeuslearning/automation/driver/I\+Driver.\+java\end{DoxyCompactItemize}

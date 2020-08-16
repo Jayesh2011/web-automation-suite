@@ -1,0 +1,423 @@
+.TH "com.zeuslearning.automation.selenium.interactions.Verifications" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.selenium.interactions.Verifications \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVerifications\fP (Object driver)"
+.br
+.ti -1c
+.RI "int \fBcompareStrings\fP (String string1, String string2)"
+.br
+.ti -1c
+.RI "int \fBcompareStringsIgnoreCase\fP (String string1, String string2)"
+.br
+.ti -1c
+.RI "boolean \fBcontains\fP (String str1, String str2)"
+.br
+.ti -1c
+.RI "boolean \fBisAlertPresent\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBisElementDisplayed\fP (Object element)"
+.br
+.ti -1c
+.RI "boolean \fBisElementDisplayed\fP (Object element, int period)"
+.br
+.ti -1c
+.RI "boolean \fBisElementNotDisplayed\fP (Object element)"
+.br
+.ti -1c
+.RI "boolean \fBisElementNotDisplayed\fP (Object element, int period)"
+.br
+.ti -1c
+.RI "boolean \fBisElementPresent\fP (Object element)"
+.br
+.ti -1c
+.RI "boolean \fBisElementPresent\fP (Object element, int period)"
+.br
+.ti -1c
+.RI "boolean \fBisEnabled\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBisRegexMatch\fP (String actualString, String expectedRegex)"
+.br
+.ti -1c
+.RI "boolean \fBisRegexMatchIgnoreCase\fP (String actualString, String expectedRegex)"
+.br
+.ti -1c
+.RI "boolean \fBisSelected\fP (Object locator)"
+.br
+.ti -1c
+.RI "boolean \fBisStringMatch\fP (String actual, String expected)"
+.br
+.ti -1c
+.RI "boolean \fBisStringMatchIgnoreCase\fP (String actual, String expected)"
+.br
+.ti -1c
+.RI "boolean \fBisTitleEqualTo\fP (String expectedTitle)"
+.br
+.ti -1c
+.RI "boolean \fBverifyTextOnPage\fP (Object locator, String expected)"
+.br
+.ti -1c
+.RI "boolean \fBverifySubstringOnPage\fP (Object locator, String expected)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBHtmlAlertOps\fP \fBalert\fP"
+.br
+.ti -1c
+.RI "\fBQueryHtml\fP \fBquery\fP"
+.br
+.ti -1c
+.RI "\fBTimeout\fP \fBtimeout\fP"
+.br
+.ti -1c
+.RI "WebDriver \fB_driver\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "int com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.compareStrings (String string1, String string2)\fC [inline]\fP"
+Compare 2 strings (case-sensitive)
+.PP
+Compares two strings lexicographically\&. The comparison is based on the Unicode value of each character in the strings\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstring1\fP {String} 
+.br
+\fIstring2\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{int} - case-sensitive comparison\&. returns positive integer, if \fCstring1\fP lexicographically precedes \fCstring2\fP\&. returns negative integer, if \fCstring1\fP lexicographically follows \fCstring2\fP\&. returns 0, if both the strings are identical\&. returns the difference between the lengths of \fCstring1\fP and \fCstring2\fP (\fCstring1\fP - \fCstring2\fP), If there is no index position at which they differ\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "int com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.compareStringsIgnoreCase (String string1, String string2)\fC [inline]\fP"
+Compare 2 strings (case-insensitive)
+.PP
+Compares two strings lexicographically\&. The comparison is based on the Unicode value of each character in the strings and on the length of the strings\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstring1\fP {String} 
+.br
+\fIstring2\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{int} - case-insensitive comparison\&. returns positive integer, if \fCstring1\fP lexicographically precedes \fCstring2\fP\&. returns negative integer, if \fCstring1\fP lexicographically follows \fCstring2\fP\&. returns 0, if both the strings are identical\&. returns the difference between the lengths of \fCstring1\fP and \fCstring2\fP (\fCstring1\fP - \fCstring2\fP), if there is no index position at which they differ\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.contains (String str1, String str2)\fC [inline]\fP"
+Checks if str1 contains str2\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstr1\fP {String} 
+.br
+\fIstr2\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} Return true if str1 contains str2 and str1\&.length > str2\&.length, else return false\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isAlertPresent ()\fC [inline]\fP"
+Verify if alert pop-up is present\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if alert is present, else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isElementDisplayed (Object element)\fC [inline]\fP"
+Check if the element is displayed\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if element is displayed, else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isElementDisplayed (Object element, int timeout)\fC [inline]\fP"
+Check if the element is displayed\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. * 
+.br
+\fItimeout\fP {int} - Wait time in seconds, before the check is performed\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if element is displayed, else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isElementNotDisplayed (Object locator)\fC [inline]\fP"
+Checks if element is displayed on the page or not\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Boolean} - Return \fCtrue\fP if the element is not displayed else return false\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isElementNotDisplayed (Object element, int timeout)\fC [inline]\fP"
+Checks if element is displayed on the page or not\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fItimeout\fP {int} - Wait time in seconds, before the check is performed\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Boolean} - Return \fCtrue\fP if the element is not displayed else return false\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isElementPresent (Object locator)\fC [inline]\fP"
+Checks if element is present on the DOM or not\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Boolean} - Return \fCtrue\fP if the element is present on the DOM else return false\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isElementPresent (Object locator, int timeout)\fC [inline]\fP"
+Checks if element is present on the DOM or not\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fItimeout\fP {int} - Wait time in seconds, before the check is performed\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Boolean} - Return \fCtrue\fP if the element is present on the DOM else return false\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isEnabled (Object element)\fC [inline]\fP"
+Check if the element is enabled\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if the element is enabled, else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isRegexMatch (String actualString, String expectedRegex)\fC [inline]\fP"
+Verify if strings are equal (case-sensitive check)\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactualString\fP {String} 
+.br
+\fIexpectedRegex\fP {String} - Regular expression 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if strings are equal (case-sensitive), else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isRegexMatchIgnoreCase (String actualString, String expectedRegex)\fC [inline]\fP"
+Verify if strings are equal (case-sensitive check)\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactualString\fP {String} 
+.br
+\fIexpectedRegex\fP {String} - Regular expression 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if strings are equal (case-sensitive), else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isSelected (Object element)\fC [inline]\fP"
+Check if the element is in the selected state\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if element is in the selected state, else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isStringMatch (String actual, String expected)\fC [inline]\fP"
+Verify if strings are equal (case-sensitive check)\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactual\fP {String} 
+.br
+\fIexpected\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if strings are equal (case-sensitive), else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isStringMatchIgnoreCase (String actual, String expected)\fC [inline]\fP"
+Verify if strings are equal (case-insensitive check)\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactual\fP {String} 
+.br
+\fIexpected\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if strings are equal (case-insensitive), else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.isTitleEqualTo (String expectedTitle)\fC [inline]\fP"
+Check if the title of the activity is equal to the string passed\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIexpectedTitle\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if titles match, else returns \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.verifySubstringOnPage (Object locator, String partOfExpectedString)\fC [inline]\fP"
+Verify if text is present on the page\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIpartOfExpectedString\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP if expected string present on the page, else return \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Verifications\&.verifyTextOnPage (Object locator, String expected)\fC [inline]\fP"
+Verify if text is present on the page\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIexpected\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP if expected string present on the page, else return \fCfalse\fP\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IVerifications\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

@@ -1,0 +1,7 @@
+<map id="com.zeuslearning.automation.selenium.interactions.BrowserWindow" name="com.zeuslearning.automation.selenium.interactions.BrowserWindow">
+<area shape="rect" id="node2" href="$interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1_i_window_operations.html" title="com.zeuslearning.automation.interactions.\lIWindowOperations" alt="" coords="847,5,1113,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1_query_html.html" title="com.zeuslearning.automation.selenium.interactions.\lQueryHtml" alt="" coords="819,140,1141,181"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1_i_query_html_element.html" title="com.zeuslearning.automation.interactions.\lIQueryHtmlElement" alt="" coords="421,137,688,179"/>
+<area shape="rect" id="node6" href="$classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1_timeout.html" title="com.zeuslearning.automation.selenium.interactions.\lTimeout" alt="" coords="393,72,716,113"/>
+<area shape="rect" id="node7" href="$interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1_i_wait_operations.html" title="com.zeuslearning.automation.interactions.\lIWaitOperations" alt="" coords="5,23,272,64"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="com.zeuslearning.automation.selenium.interactions.Verifications.verifySubstringOnPage" name="com.zeuslearning.automation.selenium.interactions.Verifications.verifySubstringOnPage">
+<area shape="rect" id="node2" href="$dc/d41/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1QueryHtml.html#a9635c7b4c91241fc2896d317ca4121ef" title="com.zeuslearning.automation.selenium.interactions.\lQueryHtml.getText" alt="" coords="376,5,699,47"/>
+<area shape="rect" id="node3" href="$d2/d6b/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Verifications.html#a5e29c5310810934f0e069203e35e31bc" title="com.zeuslearning.automation.selenium.interactions.\lVerifications.contains" alt="" coords="376,71,699,112"/>
+</map>

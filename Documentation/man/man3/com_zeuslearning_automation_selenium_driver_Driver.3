@@ -1,0 +1,134 @@
+.TH "com.zeuslearning.automation.selenium.driver.Driver" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.selenium.driver.Driver \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.zeuslearning\&.automation\&.driver\&.IDriver\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDriver\fP (String configPath)"
+.br
+.ti -1c
+.RI "Properties \fBgetConfigProperties\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitializeDriver\fP (String browserName)"
+.br
+.ti -1c
+.RI "boolean \fBcloseWindow\fP ()"
+.br
+.ti -1c
+.RI "void \fBquitDriver\fP ()"
+.br
+.ti -1c
+.RI "Object \fBgetDriver\fP (String browserName)"
+.br
+.ti -1c
+.RI "void \fBlogJsErrors\fP (String filePath)"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBBasicFileOps\fP \fBfile\fP = new \fBBasicFileOps\fP()"
+.br
+.ti -1c
+.RI "String \fBdriverPath\fP = null"
+.br
+.ti -1c
+.RI "String \fBbrowser\fP = null"
+.br
+.ti -1c
+.RI "Properties \fBprop\fP"
+.br
+.ti -1c
+.RI "DesiredCapabilities \fBcapabilities\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "WebDriver \fB_driver\fP"
+.br
+.ti -1c
+.RI "String \fB_configPath\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.driver\&.Driver\&.closeWindow ()\fC [inline]\fP"
+Close the active window\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if window is closed successfully\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.driver\&.IDriver\fP\&.
+.SS "Properties com\&.zeuslearning\&.automation\&.selenium\&.driver\&.Driver\&.getConfigProperties ()\fC [inline]\fP"
+Read config properties
+.PP
+\fBReturns:\fP
+.RS 4
+{Properties} - Returns all the config properties set for a project\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.driver\&.IDriver\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.selenium\&.driver\&.Driver\&.getDriver (String browserName)\fC [inline]\fP"
+Get the driver object\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{String}\fP browserName 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - driver object\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.driver\&.IDriver\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.selenium\&.driver\&.Driver\&.initializeDriver (String browserName)\fC [inline]\fP"
+Initialize driver\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{String}\fP browserName 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.driver\&.IDriver\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.selenium\&.driver\&.Driver\&.logJsErrors (String filePath)\fC [inline]\fP"
+Logs JS errors in excel sheet\&. This works only for Firefox and Chrome\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{String}\fP filePath - Log path 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.driver\&.IDriver\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.selenium\&.driver\&.Driver\&.quitDriver ()\fC [inline]\fP"
+Quit the driver\&. 
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.driver\&.IDriver\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

@@ -1,0 +1,60 @@
+.TH "com.zeuslearning.automation.interactions.IExecuteJavascript" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.interactions.IExecuteJavascript \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.ExecuteJavascript\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "Object \fBexecuteScript\fP (String script, Object\&.\&.\&. args)"
+.br
+.ti -1c
+.RI "Object \fBexecuteAsyncScript\fP (String script, Object\&.\&.\&. args)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IExecuteJavascript\&.executeAsyncScript (String script, Object\&.\&.\&. args)"
+Execute an asynchronous piece of JavaScript in the context of the currently selected frame or window\&. Unlike executing synchronous JavaScript, scripts executed with this method must explicitly signal they are finished by invoking the provided callback\&. This callback is always injected into the executed function as the last argument\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{Object\fP List} args 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} For an HTML element, this method returns a WebElement For a number, a Long is returned For a boolean, a Boolean is returned For all other cases, a String is returned\&. For an array, return a List<Object> with each object following the rules above\&. We support nested lists\&. Unless the value is null or there is no return value, in which null is returned 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.ExecuteJavascript\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IExecuteJavascript\&.executeScript (String script, Object\&.\&.\&. args)"
+Executes JavaScript in the context of the currently selected frame or window\&. The script fragment provided will be executed as the body of an anonymous function\&. Within the script, use document to refer to the current document\&. Note that local variables will not be available once the script has finished executing, though global variables will persist\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{String}\fP script - Javascript to be executed 
+.br
+\fI{Object\fP List} args 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} For an HTML element, this method returns a WebElement For a number, a Long is returned For a boolean, a Boolean is returned For all other cases, a String is returned\&. For an array, return a List<Object> with each object following the rules above\&. We support nested lists\&. Unless the value is null or there is no return value, in which null is returned 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.ExecuteJavascript\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

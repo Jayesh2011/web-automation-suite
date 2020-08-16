@@ -1,0 +1,101 @@
+.TH "com.zeuslearning.automation.unittests.ImageCompare" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.unittests.ImageCompare \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBImageCompare\fP (String file1, String file2)"
+.br
+.ti -1c
+.RI "\fBImageCompare\fP (Image img1, Image img2)"
+.br
+.ti -1c
+.RI "\fBImageCompare\fP (BufferedImage img1, BufferedImage img2)"
+.br
+.ti -1c
+.RI "void \fBsetParameters\fP (int x, int y, int factorA, int factorD)"
+.br
+.ti -1c
+.RI "void \fBsetDebugMode\fP (int m)"
+.br
+.ti -1c
+.RI "void \fBcompare\fP ()"
+.br
+.ti -1c
+.RI "BufferedImage \fBgetChangeIndicator\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBmatch\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBmain\fP (String[] args)  throws FileNotFoundException "
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBautoSetParameters\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetAverageBrightness\fP (BufferedImage img)"
+.br
+.in -1c
+.SS "Static Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static BufferedImage \fBimageToBufferedImage\fP (Image img)"
+.br
+.ti -1c
+.RI "static void \fBsaveJPG\fP (Image img, String filename)  throws FileNotFoundException "
+.br
+.ti -1c
+.RI "static Image \fBloadJPG\fP (String filename)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "BufferedImage \fBimg1\fP = null"
+.br
+.ti -1c
+.RI "BufferedImage \fBimg2\fP = null"
+.br
+.ti -1c
+.RI "BufferedImage \fBimgc\fP = null"
+.br
+.ti -1c
+.RI "int \fBcomparex\fP = 0"
+.br
+.ti -1c
+.RI "int \fBcomparey\fP = 0"
+.br
+.ti -1c
+.RI "int \fBfactorA\fP = 0"
+.br
+.ti -1c
+.RI "int \fBfactorD\fP = 10"
+.br
+.ti -1c
+.RI "boolean \fBmatch\fP = false"
+.br
+.ti -1c
+.RI "int \fBdebugMode\fP = 0"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

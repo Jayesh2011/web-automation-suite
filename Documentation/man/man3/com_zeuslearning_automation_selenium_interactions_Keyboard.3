@@ -1,0 +1,179 @@
+.TH "com.zeuslearning.automation.selenium.interactions.Keyboard" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.selenium.interactions.Keyboard \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBKeyboard\fP (Object driver)"
+.br
+.ti -1c
+.RI "boolean \fBmultipleKeyStrokes\fP (Object locator, String keys)"
+.br
+.ti -1c
+.RI "boolean \fBmultipleKeyStrokes\fP (Object locator, String keys, int loopCount)"
+.br
+.ti -1c
+.RI "boolean \fBtypeAfterClear\fP (Object locator, String value)"
+.br
+.ti -1c
+.RI "boolean \fBtype\fP (Object locator, String value)"
+.br
+.ti -1c
+.RI "boolean \fBclearTextField\fP (Object locator)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBreplaceSpaceCharacter\fP (String strText)"
+.br
+.ti -1c
+.RI "boolean \fBtoBeCleared\fP (Object element)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Actions \fB_action\fP"
+.br
+.ti -1c
+.RI "\fBIExecuteJavascript\fP \fB_js\fP"
+.br
+.ti -1c
+.RI "int \fB_attempts\fP"
+.br
+.ti -1c
+.RI "\fBQueryHtml\fP \fB_query\fP"
+.br
+.ti -1c
+.RI "String \fB_script\fP"
+.br
+.ti -1c
+.RI "WebDriver \fB_driver\fP"
+.br
+.ti -1c
+.RI "WebElement \fB_element\fP"
+.br
+.ti -1c
+.RI "\fBVerifications\fP \fB_verify\fP"
+.br
+.ti -1c
+.RI "\fBMouse\fP \fB_mouse\fP"
+.br
+.ti -1c
+.RI "\fBIWindowOperations\fP \fB_browser\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\&.clearTextField (Object locator)\fC [inline]\fP"
+Clears the text field\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object}: Path to the text field\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if clearing is successful\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\&.multipleKeyStrokes (Object locator, String keys)\fC [inline]\fP"
+Press multiple keys at once\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object}: Path to the text field\&. 
+.br
+\fIkeys\fP {String}: pass the keys to be pressed at once\&. For e\&.g\&. keys = 'ctrl+A' will select all the text
+.RE
+.PP
+Control = ctrl Shift = shift Alt = alt 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\&.multipleKeyStrokes (Object locator, String keys, int loopCount)\fC [inline]\fP"
+Press multiple keys at once\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object}: Path to the text field\&. 
+.br
+\fIkeys\fP {String}: pass the keys to be pressed at once\&. For e\&.g\&. keys = 'ctrl+A' will select all the text
+.RE
+.PP
+Control = ctrl Shift = shift Alt = alt 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIloopCount\fP {Integer}: Number of times the keys are to be pressed\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Boolean} - Returns \fCtrue\fP if the keypress is successful\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\&.type (Object locator, String value)\fC [inline]\fP"
+Type into text fields\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to text field\&. 
+.br
+\fIvalue\fP [String] - Text string to be passed/typed\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if typing is successful\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\&.typeAfterClear (Object locator, String value)\fC [inline]\fP"
+Clear the existing text and type into text fields\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to text field\&. 
+.br
+\fIvalue\fP [String] - Text string to be passed/typed\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if typing is successful\&. 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

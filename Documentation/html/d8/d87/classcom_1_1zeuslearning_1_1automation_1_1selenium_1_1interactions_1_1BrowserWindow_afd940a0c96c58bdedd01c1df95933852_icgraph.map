@@ -1,0 +1,5 @@
+<map id="com.zeuslearning.automation.selenium.interactions.BrowserWindow.injectSimulations" name="com.zeuslearning.automation.selenium.interactions.BrowserWindow.injectSimulations">
+<area shape="rect" id="node2" href="$d8/d87/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1BrowserWindow.html#ac680899d66b9d544bed94dc3de808559" title="com.zeuslearning.automation.selenium.interactions.\lBrowserWindow.navigateBack" alt="" coords="376,5,699,47"/>
+<area shape="rect" id="node3" href="$d8/d87/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1BrowserWindow.html#a0944339f910fc20bbb074e393270c9cc" title="com.zeuslearning.automation.selenium.interactions.\lBrowserWindow.open" alt="" coords="376,71,699,112"/>
+<area shape="rect" id="node4" href="$d8/d87/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1BrowserWindow.html#a501c3085d022ec5cd5ced4631c46eaae" title="com.zeuslearning.automation.selenium.interactions.\lBrowserWindow.checkAndInjectSimulations" alt="" coords="376,136,699,177"/>
+</map>

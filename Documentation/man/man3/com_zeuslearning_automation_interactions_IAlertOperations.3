@@ -1,0 +1,90 @@
+.TH "com.zeuslearning.automation.interactions.IAlertOperations" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.interactions.IAlertOperations \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.HtmlAlertOps\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBdismissAlert\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBacceptAlert\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetAlertText\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBsendPromptText\fP (String text)"
+.br
+.ti -1c
+.RI "Object \fBswitchToAlert\fP ()"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IAlertOperations\&.acceptAlert ()"
+Accept the alerts / Click the \fCYes\fP or \fCOK\fP button\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if accept operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.HtmlAlertOps\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IAlertOperations\&.dismissAlert ()"
+Dismiss the alerts / Click the \fCCancel\fP button\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if dismiss operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.HtmlAlertOps\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IAlertOperations\&.getAlertText ()"
+Return text string on the alert popup\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - returns text string on the alert popup\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.HtmlAlertOps\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IAlertOperations\&.sendPromptText (String text)"
+Send a prompt text to the alert popup\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if prompt operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.HtmlAlertOps\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IAlertOperations\&.switchToAlert ()"
+Accept the alerts / Click the \fCYes\fP or \fCOK\fP button\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - returns an \fCAlert\fP object if alert is found, else returns a \fCNull\fP object\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.HtmlAlertOps\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

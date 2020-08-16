@@ -1,0 +1,92 @@
+\hypertarget{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript}{}\section{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Execute\+Javascript Class Reference}
+\label{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript}\index{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Execute\+Javascript@{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Execute\+Javascript}}
+
+
+Inheritance diagram for com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Execute\+Javascript\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{d9/d09/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Execute\+Javascript\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d72/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_abb15a9bf9e3c42d8854f4adf2e653724}{}\label{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_abb15a9bf9e3c42d8854f4adf2e653724} 
+{\bfseries Execute\+Javascript} (Object driver)
+\item 
+Object \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_adc7cfbadf6cfb984c5487e8bcab549d9}{execute\+Script} (String script, Object... args)
+\item 
+Object \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_a5495b96ea1c285d54c93c10d09348c14}{execute\+Async\+Script} (String script, Object... args)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_a90df76cddcf7e9147339f5c322025e49}{}\label{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_a90df76cddcf7e9147339f5c322025e49} 
+Web\+Driver {\bfseries \+\_\+driver}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_aa85a99853a82511a5e8b6754b8d04d6b}{}\label{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_aa85a99853a82511a5e8b6754b8d04d6b} 
+static Javascript\+Executor {\bfseries \+\_\+js}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_a5495b96ea1c285d54c93c10d09348c14}{}\label{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_a5495b96ea1c285d54c93c10d09348c14} 
+\index{com\+::zeuslearning\+::automation\+::selenium\+::interactions\+::\+Execute\+Javascript@{com\+::zeuslearning\+::automation\+::selenium\+::interactions\+::\+Execute\+Javascript}!execute\+Async\+Script@{execute\+Async\+Script}}
+\index{execute\+Async\+Script@{execute\+Async\+Script}!com\+::zeuslearning\+::automation\+::selenium\+::interactions\+::\+Execute\+Javascript@{com\+::zeuslearning\+::automation\+::selenium\+::interactions\+::\+Execute\+Javascript}}
+\subsubsection{\texorpdfstring{execute\+Async\+Script()}{executeAsyncScript()}}
+{\footnotesize\ttfamily Object com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Execute\+Javascript.\+execute\+Async\+Script (\begin{DoxyParamCaption}\item[{String}]{script,  }\item[{Object...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Execute an asynchronous piece of Java\+Script in the context of the currently selected frame or window. Unlike executing synchronous Java\+Script, scripts executed with this method must explicitly signal they are finished by invoking the provided callback. This callback is always injected into the executed function as the last argument.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object} & List\} args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} For an H\+T\+ML element, this method returns a Web\+Element For a number, a Long is returned For a boolean, a Boolean is returned For all other cases, a String is returned. For an array, return a List$<$\+Object$>$ with each object following the rules above. We support nested lists. Unless the value is null or there is no return value, in which null is returned 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IExecuteJavascript_a87933d4cbc9994eb6fedfa5b2c926802}{com.\+zeuslearning.\+automation.\+interactions.\+I\+Execute\+Javascript}.
+
+\hypertarget{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_adc7cfbadf6cfb984c5487e8bcab549d9}{}\label{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1ExecuteJavascript_adc7cfbadf6cfb984c5487e8bcab549d9} 
+\index{com\+::zeuslearning\+::automation\+::selenium\+::interactions\+::\+Execute\+Javascript@{com\+::zeuslearning\+::automation\+::selenium\+::interactions\+::\+Execute\+Javascript}!execute\+Script@{execute\+Script}}
+\index{execute\+Script@{execute\+Script}!com\+::zeuslearning\+::automation\+::selenium\+::interactions\+::\+Execute\+Javascript@{com\+::zeuslearning\+::automation\+::selenium\+::interactions\+::\+Execute\+Javascript}}
+\subsubsection{\texorpdfstring{execute\+Script()}{executeScript()}}
+{\footnotesize\ttfamily Object com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Execute\+Javascript.\+execute\+Script (\begin{DoxyParamCaption}\item[{String}]{script,  }\item[{Object...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Executes Java\+Script in the context of the currently selected frame or window. The script fragment provided will be executed as the body of an anonymous function. Within the script, use document to refer to the current document. Note that local variables will not be available once the script has finished executing, though global variables will persist.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & script -\/ Javascript to be executed \\
+\hline
+{\em \{\+Object} & List\} args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} For an H\+T\+ML element, this method returns a Web\+Element For a number, a Long is returned For a boolean, a Boolean is returned For all other cases, a String is returned. For an array, return a List$<$\+Object$>$ with each object following the rules above. We support nested lists. Unless the value is null or there is no return value, in which null is returned 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IExecuteJavascript_a2460e236de6afd1c685b77700474b901}{com.\+zeuslearning.\+automation.\+interactions.\+I\+Execute\+Javascript}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+G\+I\+T/automation-\/common/src/java/com/zeuslearning/automation/selenium/interactions/Execute\+Javascript.\+java\end{DoxyCompactItemize}

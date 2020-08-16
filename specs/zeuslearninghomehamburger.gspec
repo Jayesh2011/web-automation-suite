@@ -1,0 +1,50 @@
+@import rules.gspec
+
+@objects
+	header-container			        .header.container
+		hamburger				        .navbar-header.pull-left
+        	icon-bar-vertical-*         .icon-bar.clicked
+    header-nav-items-hamburger-*		#navbarCollapse ul li.menu-content-list:not(.hidden-xss)
+
+@groups
+    hamburgeritems                      header-nav-items-hamburger-*
+    headeritems                         header-nav-items-*
+
+= Hamburger Menu UI =
+    
+	= Verifying the position of the Hamburger icon for mobile view =
+		header-container.hamburger:
+			@on mobile
+				visible
+				inside header-container ~18px left, ~282px right
+
+	= Verify if only 3 Vertical bars for the hamburger menu are visible for mobile view in clicked state =
+		global:
+			@on mobile
+				count visible header-container.hamburger.icon-bar-vertical-* is 3
+			@on tablet-portrait, tablet-landscape, laptop, fullHD
+				count visible header-container.hamburger.icon-bar-vertical-* is 0
+
+	= Verify if vertical lines are visible for the hamburger icon and its UI and position =
+		@on mobile
+			header-container.hamburger.icon-bar-vertical-*:
+					height ~20px
+
+    = Verify if header bar elements are within the hamburger Menu and not on the header =
+        global:
+            count visible &hamburgeritems is 5
+        
+    = Verify if Hamburger items are placed one below the other =
+        | &hamburgeritems are aligned vertically below each other with ~-82px margin
+
+    = Verify labels of the Hamburger items =
+        @forEach [&hamburgeritems] as item, index as i
+			${item}:
+				@on tablet-portrait, tablet-landscape, laptop, fullHD 
+					css font-family contains "Raleway"
+					css font-size is "18px"
+					@on firefox, edge
+						css color is "rgb(109, 109, 109)"
+					@on chrome, ie
+						css color is "rgba(109, 109, 109, 1)"
+					text is "${data[i-1]}"

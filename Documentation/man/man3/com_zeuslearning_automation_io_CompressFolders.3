@@ -1,0 +1,38 @@
+.TH "com.zeuslearning.automation.io.CompressFolders" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.io.CompressFolders \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBzipDirectory\fP (String pathToDirectory)"
+.br
+.ti -1c
+.RI "void \fBzipDirectory\fP (String pathToDirectory, String pathToZip)"
+.br
+.ti -1c
+.RI "List< File > \fBgetAllFiles\fP (File dir)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBgetAllFiles\fP (File dir, List< File > fileList)"
+.br
+.ti -1c
+.RI "void \fBwriteZipFile\fP (File directoryToZip, List< File > fileList, String pathToZip)"
+.br
+.ti -1c
+.RI "void \fBaddToZip\fP (File directoryToZip, File file, ZipOutputStream zos)  throws FileNotFoundException, IOException "
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

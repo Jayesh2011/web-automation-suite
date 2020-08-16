@@ -1,0 +1,145 @@
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations}{}\section{com.\+zeuslearning.\+automation.\+interactions.\+I\+Keyboard\+Operations Interface Reference}
+\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations}\index{com.\+zeuslearning.\+automation.\+interactions.\+I\+Keyboard\+Operations@{com.\+zeuslearning.\+automation.\+interactions.\+I\+Keyboard\+Operations}}
+
+
+Inheritance diagram for com.\+zeuslearning.\+automation.\+interactions.\+I\+Keyboard\+Operations\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{d0/da8/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a81c4fed89a3f9c822db19bad8a948f6b}{type\+After\+Clear} (Object locator, String value)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a46786f6c5426cd849127eed9ba7192a7}{type} (Object locator, String value)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a4e070904ad56761bd97d494542833274}{multiple\+Key\+Strokes} (Object locator, String keys)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a8638a90fc1cc0d6f31b7bf8394299d66}{multiple\+Key\+Strokes} (Object locator, String keys, int loop\+Count)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_adc477d38d61dc6aa4fc9c9749a20d773}{clear\+Text\+Field} (Object locator)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_adc477d38d61dc6aa4fc9c9749a20d773}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_adc477d38d61dc6aa4fc9c9749a20d773} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}!clear\+Text\+Field@{clear\+Text\+Field}}
+\index{clear\+Text\+Field@{clear\+Text\+Field}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}}
+\subsubsection{\texorpdfstring{clear\+Text\+Field()}{clearTextField()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Keyboard\+Operations.\+clear\+Text\+Field (\begin{DoxyParamCaption}\item[{Object}]{locator }\end{DoxyParamCaption})}
+
+Clears the text field.
+
+
+\begin{DoxyParams}{Parameters}
+{\em locator} & \{Object\}\+: Path to the text field. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ Returns {\ttfamily true} if clearing is successful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Keyboard_aa50940a7a030455246ba1c3ee3d62d85}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Keyboard}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a4e070904ad56761bd97d494542833274}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a4e070904ad56761bd97d494542833274} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}!multiple\+Key\+Strokes@{multiple\+Key\+Strokes}}
+\index{multiple\+Key\+Strokes@{multiple\+Key\+Strokes}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}}
+\subsubsection{\texorpdfstring{multiple\+Key\+Strokes()}{multipleKeyStrokes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Keyboard\+Operations.\+multiple\+Key\+Strokes (\begin{DoxyParamCaption}\item[{Object}]{locator,  }\item[{String}]{keys }\end{DoxyParamCaption})}
+
+Press multiple keys at once.
+
+
+\begin{DoxyParams}{Parameters}
+{\em locator} & \{Object\}\+: Path to the text field. \\
+\hline
+{\em keys} & \{String\}\+: pass the keys to be pressed at once. For e.\+g. keys = \char`\"{}ctrl+\+A\char`\"{} will select all the text\\
+\hline
+\end{DoxyParams}
+Control = ctrl Shift = shift Alt = alt \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Keyboard_af0c2d93c6dca53eea5fe996df3f85af7}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Keyboard}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a8638a90fc1cc0d6f31b7bf8394299d66}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a8638a90fc1cc0d6f31b7bf8394299d66} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}!multiple\+Key\+Strokes@{multiple\+Key\+Strokes}}
+\index{multiple\+Key\+Strokes@{multiple\+Key\+Strokes}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}}
+\subsubsection{\texorpdfstring{multiple\+Key\+Strokes()}{multipleKeyStrokes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Keyboard\+Operations.\+multiple\+Key\+Strokes (\begin{DoxyParamCaption}\item[{Object}]{locator,  }\item[{String}]{keys,  }\item[{int}]{loop\+Count }\end{DoxyParamCaption})}
+
+Press multiple keys at once.
+
+
+\begin{DoxyParams}{Parameters}
+{\em locator} & \{Object\}\+: Path to the text field. \\
+\hline
+{\em keys} & \{String\}\+: pass the keys to be pressed at once. For e.\+g. keys = \char`\"{}ctrl+\+A\char`\"{} will select all the text\\
+\hline
+\end{DoxyParams}
+Control = ctrl Shift = shift Alt = alt 
+\begin{DoxyParams}{Parameters}
+{\em loop\+Count} & \{Integer\}\+: Number of times the keys are to be pressed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Boolean\} -\/ Returns {\ttfamily true} if the keypress is successful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Keyboard_a99da211274aa02b2c3611d1db275996f}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Keyboard}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a46786f6c5426cd849127eed9ba7192a7}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a46786f6c5426cd849127eed9ba7192a7} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}!type@{type}}
+\index{type@{type}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Keyboard\+Operations.\+type (\begin{DoxyParamCaption}\item[{Object}]{locator,  }\item[{String}]{value }\end{DoxyParamCaption})}
+
+Type into text fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em locator} & \{Object\} -\/ Path to text field. \\
+\hline
+{\em value} & \mbox{[}String\mbox{]} -\/ Text string to be passed/typed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ Returns {\ttfamily true} if typing is successful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Keyboard_ac169af3cdaa7e24a4ec048c70540aaa1}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Keyboard}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a81c4fed89a3f9c822db19bad8a948f6b}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations_a81c4fed89a3f9c822db19bad8a948f6b} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}!type\+After\+Clear@{type\+After\+Clear}}
+\index{type\+After\+Clear@{type\+After\+Clear}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Keyboard\+Operations}}
+\subsubsection{\texorpdfstring{type\+After\+Clear()}{typeAfterClear()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Keyboard\+Operations.\+type\+After\+Clear (\begin{DoxyParamCaption}\item[{Object}]{locator,  }\item[{String}]{value }\end{DoxyParamCaption})}
+
+Clear the existing text and type into text fields.
+
+
+\begin{DoxyParams}{Parameters}
+{\em locator} & \{Object\} -\/ Path to text field. \\
+\hline
+{\em value} & \mbox{[}String\mbox{]} -\/ Text string to be passed/typed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ Returns {\ttfamily true} if typing is successful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Keyboard_a2436faf2f5954d8e1d4cb326c7bb8e06}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Keyboard}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+G\+I\+T/automation-\/common/src/java/com/zeuslearning/automation/interactions/I\+Keyboard\+Operations.\+java\end{DoxyCompactItemize}

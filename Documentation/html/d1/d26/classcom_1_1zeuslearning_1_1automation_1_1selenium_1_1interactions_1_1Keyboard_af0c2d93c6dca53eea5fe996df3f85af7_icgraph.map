@@ -1,0 +1,5 @@
+<map id="com.zeuslearning.automation.selenium.interactions.Keyboard.multipleKeyStrokes" name="com.zeuslearning.automation.selenium.interactions.Keyboard.multipleKeyStrokes">
+<area shape="rect" id="node2" href="$d1/d26/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Keyboard.html#a99da211274aa02b2c3611d1db275996f" title="com.zeuslearning.automation.selenium.interactions.\lKeyboard.multipleKeyStrokes" alt="" coords="376,5,699,47"/>
+<area shape="rect" id="node3" href="$d1/d26/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Keyboard.html#aa50940a7a030455246ba1c3ee3d62d85" title="com.zeuslearning.automation.selenium.interactions.\lKeyboard.clearTextField" alt="" coords="376,71,699,112"/>
+<area shape="rect" id="node4" href="$d1/d26/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Keyboard.html#a2436faf2f5954d8e1d4cb326c7bb8e06" title="com.zeuslearning.automation.selenium.interactions.\lKeyboard.typeAfterClear" alt="" coords="747,71,1069,112"/>
+</map>

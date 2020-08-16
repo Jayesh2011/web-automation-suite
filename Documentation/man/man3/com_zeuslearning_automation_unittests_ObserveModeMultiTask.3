@@ -1,0 +1,78 @@
+.TH "com.zeuslearning.automation.unittests.ObserveModeMultiTask" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.unittests.ObserveModeMultiTask \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBmodeObserve\fP ()  throws Exception "
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBIDriver\fP \fBiDriver\fP = new \fBDriver\fP('src/java/com/zeuslearning/automation/Config\&.properties')"
+.br
+.ti -1c
+.RI "WebDriver \fBdriver\fP = (WebDriver) iDriver\&.getDriver('')"
+.br
+.ti -1c
+.RI "\fBIWindowOperations\fP \fBbrowser\fP = new \fBBrowserWindow\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIMouseOperations\fP \fBmouseHandle\fP = new \fBMouse\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIQueryHtmlElement\fP \fBqueryHtml\fP = new \fBQueryHtml\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIVerifications\fP \fBverify\fP = new \fBVerifications\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIWaitOperations\fP \fBwait\fP = new \fBTimeout\fP(driver)"
+.br
+.ti -1c
+.RI "\fBIAlertOperations\fP \fB_alert\fP = new \fBHtmlAlertOps\fP(driver)"
+.br
+.ti -1c
+.RI "\fBScreenCapture\fP \fBscreenShots\fP = new \fBScreenCapture\fP(driver)"
+.br
+.ti -1c
+.RI "Scanner \fBscanner\fP = new Scanner(System\&.in)"
+.br
+.ti -1c
+.RI "Point \fBpoint\fP"
+.br
+.ti -1c
+.RI "String \fBtrainingModeUrl\fP"
+.br
+.ti -1c
+.RI "\fBExcelFileOps\fP \fBexcel\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBlaunchModes\fP (String path)  throws Exception "
+.br
+.ti -1c
+.RI "void \fBwaitforFileTab\fP (int taskNo)"
+.br
+.ti -1c
+.RI "void \fBinjectJsScript\fP ()"
+.br
+.ti -1c
+.RI "int \fBfindNoOfTask\fP ()"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

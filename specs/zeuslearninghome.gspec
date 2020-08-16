@@ -1,0 +1,104 @@
+@import rules.gspec
+
+@objects
+	header-container				.header.container
+		hamburger					.navbar-header.pull-left
+			icon-bar-horizontal-*	.icon-bar:not(.clicked)
+		zeusLogo					.zeus-logo-tab
+			image					img	
+	header-nav-items-*				#navbarCollapse:not(.in) .navbar-nav li:not(.hidden-xss)
+    navbar-items-mobile-*   		.visible-xs .navbar-nav li
+	navbar-items-others-*   		.hidden-xs .navbar-nav li
+
+@groups
+    navbaritemsmobile               navbar-items-mobile-*
+	navbaritemsothers               navbar-items-others-*
+	headernavitems					header-nav-items-*
+
+= Header =
+	= Verify if the header container is visible =
+		header-container:
+			visible
+
+	= Verifying the position of the Hamburger icon for mobile view =
+		header-container.hamburger:
+			@on mobile
+				visible
+				inside header-container ~18px left, ~282px right
+
+	= Verify if only 3 horizontal bars for the hamburger menu are visible for mobile view =
+		global:
+			@on mobile
+				count visible header-container.hamburger.icon-bar-horizontal-* is 3
+			@on tablet-portrait, tablet-landscape, laptop, fullHD
+				count visible header-container.hamburger.icon-bar-horizontal-* is 0
+
+	= Verify if the horizontal bar are vertically aligned to each other =
+		@on mobile
+			| header-container.hamburger.icon-bar-horizontal-* are aligned vertically below each other with -8px margin
+
+	= Verify if horizontal lines are visible for the hamburger icon and its UI and position =
+		@on mobile
+			header-container.hamburger.icon-bar-horizontal-1:
+					inside header-container ~18px left, ~16px top, ~282px right
+					width ~20px
+					left-of header-container.zeusLogo 134px
+	
+			header-container.hamburger.icon-bar-horizontal-3:
+					inside header-container ~18px left, ~16px bottom, ~282px right
+
+	= Check if Zeus Learning logo is visible =
+		header-container.zeusLogo:
+			visible
+			@on Firefox, firefox, edge, portrait-landscape
+				width 99px
+				height 27px
+			@on chrome, ie, safari, iOS
+				width 130px
+				height 35 px
+
+	= Verify if the Zeus learning log is as per the image provided by Graphics team and its position wrt header container =
+		header-container.zeusLogo.image:
+			visible
+			image file ../images/ZSingleLogo-error.png
+			@on mobile
+				inside header-container 8px top, 7px bottom, 18px right
+			@on tablet-portrait, tablet-landscape, laptop, fullHD
+				inside header-container >=30px left, ~9px top, 7 to 12px bottom
+	
+	= Navigation items on the Header =
+		= Verify if 5 items are visible for the normal view and 0 for the mobile view =
+			global:
+				@on tablet-portrait, tablet-landscape, laptop, fullHD 
+					count visible &headernavitems is 5
+				@on mobile
+					count visible &headernavitems is 0
+		= Verify the position of the items w.r.t. each other =
+			@on tablet-portrait, tablet-landscape, laptop, fullHD 
+				| &headernavitems are aligned horizontally next to each other with -10px margin
+
+		= Verify the label content and its font details =
+			@forEach [&headernavitems] as item, index as i
+				${item}:
+					@on tablet-portrait, tablet-landscape, laptop, fullHD 
+						css font-family contains "Raleway"
+						css font-size is "18px"
+						@on firefox, edge
+							css color is "rgb(109, 109, 109)"
+						@on chrome, ie
+							css color is "rgba(109, 109, 109, 1)"
+						text is "${data[i-1]}"
+
+= Service navigation below the banner =
+	= Verify if 7 items are visible =
+		global:
+			@on mobile
+				count visible &navbaritemsmobile is 7
+			@on tablet-portrait, tablet-landscape, laptop, fullHD 
+				count visible &navbaritemsothers is 7
+
+	= Verify the position of the items w.r.t. each other =
+		@on mobile
+			| &navbaritemsmobile are aligned horizontally next to each other with 4px margin
+		@on tablet-portrait, tablet-landscape, laptop, fullHD 
+			| &navbaritemsothers are aligned horizontally next to each other with ~0px margin

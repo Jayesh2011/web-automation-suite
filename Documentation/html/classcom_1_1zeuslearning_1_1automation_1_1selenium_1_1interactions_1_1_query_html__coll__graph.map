@@ -1,0 +1,5 @@
+<map id="com.zeuslearning.automation.selenium.interactions.QueryHtml" name="com.zeuslearning.automation.selenium.interactions.QueryHtml">
+<area shape="rect" id="node2" href="$interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1_i_query_html_element.html" title="com.zeuslearning.automation.interactions.\lIQueryHtmlElement" alt="" coords="421,5,688,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1_timeout.html" title="com.zeuslearning.automation.selenium.interactions.\lTimeout" alt="" coords="393,140,716,181"/>
+<area shape="rect" id="node5" href="$interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1_i_wait_operations.html" title="com.zeuslearning.automation.interactions.\lIWaitOperations" alt="" coords="5,144,272,185"/>
+</map>

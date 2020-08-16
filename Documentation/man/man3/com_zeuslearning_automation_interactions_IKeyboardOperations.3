@@ -1,0 +1,132 @@
+.TH "com.zeuslearning.automation.interactions.IKeyboardOperations" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.interactions.IKeyboardOperations \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBtypeAfterClear\fP (Object locator, String value)"
+.br
+.ti -1c
+.RI "boolean \fBtype\fP (Object locator, String value)"
+.br
+.ti -1c
+.RI "boolean \fBmultipleKeyStrokes\fP (Object locator, String keys)"
+.br
+.ti -1c
+.RI "boolean \fBmultipleKeyStrokes\fP (Object locator, String keys, int loopCount)"
+.br
+.ti -1c
+.RI "boolean \fBclearTextField\fP (Object locator)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\&.clearTextField (Object locator)"
+Clears the text field\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object}: Path to the text field\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if clearing is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\&.multipleKeyStrokes (Object locator, String keys)"
+Press multiple keys at once\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object}: Path to the text field\&. 
+.br
+\fIkeys\fP {String}: pass the keys to be pressed at once\&. For e\&.g\&. keys = 'ctrl+A' will select all the text
+.RE
+.PP
+Control = ctrl Shift = shift Alt = alt 
+.PP
+\fBReturns:\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\&.multipleKeyStrokes (Object locator, String keys, int loopCount)"
+Press multiple keys at once\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object}: Path to the text field\&. 
+.br
+\fIkeys\fP {String}: pass the keys to be pressed at once\&. For e\&.g\&. keys = 'ctrl+A' will select all the text
+.RE
+.PP
+Control = ctrl Shift = shift Alt = alt 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIloopCount\fP {Integer}: Number of times the keys are to be pressed\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Boolean} - Returns \fCtrue\fP if the keypress is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\&.type (Object locator, String value)"
+Type into text fields\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to text field\&. 
+.br
+\fIvalue\fP [String] - Text string to be passed/typed\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if typing is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IKeyboardOperations\&.typeAfterClear (Object locator, String value)"
+Clear the existing text and type into text fields\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to text field\&. 
+.br
+\fIvalue\fP [String] - Text string to be passed/typed\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if typing is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.Keyboard\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

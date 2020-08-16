@@ -1,0 +1,22 @@
+@rule %{itemPattern} are aligned horizontally next to each other with %{margin} margin
+    @forEach [${itemPattern}] as item, next as nextItem
+        ${item}:
+            aligned horizontally all ${nextItem}
+            left-of ${nextItem} ${margin}
+
+@rule %{itemPattern} are aligned vertically next to each other with %{margin} margin
+    @forEach [${itemPattern}] as item, next as nextItem
+        ${item}:
+            aligned vertically all ${nextItem}
+            above ${nextItem} ${margin}
+
+@rule %{itemPattern} are aligned vertically below each other with %{margin} margin
+    @forEach [${itemPattern}] as item, next as nextItem
+        ${item}:
+            aligned vertically all ${nextItem}
+            below ${nextItem} ${margin}
+
+@rule %{itemPattern} text is %{text}
+    @forEach [${itemPattern}] as item
+        ${item}:
+            text is ${text}

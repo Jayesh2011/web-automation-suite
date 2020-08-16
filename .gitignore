@@ -1,0 +1,5 @@
+
+target/surefire-reports
+test-output
+.settings
+*.orig

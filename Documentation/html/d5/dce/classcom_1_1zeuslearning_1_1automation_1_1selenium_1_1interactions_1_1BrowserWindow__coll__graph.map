@@ -1,0 +1,12 @@
+<map id="com.zeuslearning.automation.selenium.interactions.BrowserWindow" name="com.zeuslearning.automation.selenium.interactions.BrowserWindow">
+<area shape="rect" id="node3" href="$d3/d71/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWindowOperations.html" title="com.zeuslearning.automation.interactions.\lIWindowOperations" alt="" coords="1308,57,1575,98"/>
+<area shape="rect" id="node4" href="$d0/d5c/classcom_1_1zeuslearning_1_1automation_1_1io_1_1CompressFolders.html" title="com.zeuslearning.automation.io.\lCompressFolders" alt="" coords="1336,122,1547,163"/>
+<area shape="rect" id="node5" href="$d6/dab/classcom_1_1zeuslearning_1_1automation_1_1io_1_1TextFileOps.html" title="com.zeuslearning.automation.io.\lTextFileOps" alt="" coords="1336,338,1547,379"/>
+<area shape="rect" id="node6" href="$dc/d2c/classcom_1_1zeuslearning_1_1automation_1_1io_1_1BasicFileOps.html" title="com.zeuslearning.automation.io.\lBasicFileOps" alt="" coords="908,419,1119,461"/>
+<area shape="rect" id="node7" href="$d4/da3/interfacecom_1_1zeuslearning_1_1automation_1_1io_1_1IInputOutputOps.html" title="com.zeuslearning.automation.io.\lIInputOutputOps" alt="" coords="469,421,680,462"/>
+<area shape="rect" id="node10" href="$dc/d41/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1QueryHtml.html" title="com.zeuslearning.automation.selenium.interactions.\lQueryHtml" alt="" coords="852,251,1175,293"/>
+<area shape="rect" id="node11" href="$dc/d90/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IQueryHtmlElement.html" title="com.zeuslearning.automation.interactions.\lIQueryHtmlElement" alt="" coords="441,229,708,270"/>
+<area shape="rect" id="node14" href="$d9/df4/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Timeout.html" title="com.zeuslearning.automation.selenium.interactions.\lTimeout" alt="" coords="413,163,736,205"/>
+<area shape="rect" id="node15" href="$d1/de3/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations.html" title="com.zeuslearning.automation.interactions.\lIWaitOperations" alt="" coords="5,173,272,214"/>
+<area shape="rect" id="node20" href="$de/d14/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IExecuteJavascript.html" title="com.zeuslearning.automation.interactions.\lIExecuteJavascript" alt="" coords="1308,553,1575,594"/>
+</map>

@@ -1,0 +1,409 @@
+.TH "com.zeuslearning.automation.interactions.IWindowOperations" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.interactions.IWindowOperations \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBswitchToWindow\fP (String windowHandle)"
+.br
+.ti -1c
+.RI "String [] \fBgetAllWindowHandles\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBswitchToNewFrame\fP (Object element)"
+.br
+.ti -1c
+.RI "boolean \fBswitchToNewFrame\fP (Object element, int period)"
+.br
+.ti -1c
+.RI "boolean \fBswitchToDefault\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBmaximizeWindow\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBrefresh\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBnavigateBack\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBopen\fP (String url)"
+.br
+.ti -1c
+.RI "boolean \fBsetSize\fP (int width, int height)"
+.br
+.ti -1c
+.RI "Object \fBgetSize\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBinjectSimulations\fP ()"
+.br
+.ti -1c
+.RI "void \fBcheckAndInjectSimulations\fP ()"
+.br
+.ti -1c
+.RI "String \fBverifyPageLayout\fP (String layoutTitle, String specPath, List< String > includedTags)"
+.br
+.ti -1c
+.RI "String \fBverifyPageLayout\fP (String layoutTitle, String specPath, List< String > includedTags, Map< String, Object > vars)"
+.br
+.ti -1c
+.RI "String \fBverifyPageLayout\fP (String layoutDesc, String specPath, SectionFilter sectionFilter, Properties properties, Map< String, Object > vars)"
+.br
+.ti -1c
+.RI "void \fBgenerateHtmlReport\fP (String relativePathToHtmlReportFolder)"
+.br
+.ti -1c
+.RI "void \fBgenerateHtmlReport\fP (String relativePathToHtmlReportFolder, boolean doesReportExist)"
+.br
+.ti -1c
+.RI "void \fBinitReport\fP (Method method, Object[] arguments)"
+.br
+.ti -1c
+.RI "void \fBresetTests\fP ()"
+.br
+.ti -1c
+.RI "void \fBappendReport\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdateTestInfo\fP (Method method)"
+.br
+.ti -1c
+.RI "void \fBupdateTestInfo\fP (String method)"
+.br
+.ti -1c
+.RI "void \fBlogInfo\fP (String details)"
+.br
+.ti -1c
+.RI "void \fBlogWarn\fP (String details)"
+.br
+.ti -1c
+.RI "void \fBlogError\fP (String details)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.appendReport ()"
+Append test info to the HTML report\&. 
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.checkAndInjectSimulations ()"
+Injects mouse and keyboard simulations in case they are not available\&. 
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.generateHtmlReport (String relativePathToHtmlReportFolder)"
+Generates UI verification reports in HTML format
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrelativePathToHtmlReportFolder\fP {String} - Path to Html report folder 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.generateHtmlReport (String relativePathToHtmlReportFolder, boolean doesReportExist)"
+Generates UI verification reports in HTML format
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrelativePathToHtmlReportFolder\fP {String} - Path to Html report folder 
+.br
+\fIdoesReportExist\fP {Boolean} - If \fCtrue\fP add tests to existing reports, else generate a new HtmlReport 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.getSize ()"
+Get the size of browser window\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns the dimension of the browser window\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.initReport (Method method, Object [] arguments)"
+Initializes the TestReport instance with the name of current test method and stores it in \fBThreadLocal\fP
+.PP
+\fBParameters:\fP
+.RS 4
+\fImethod\fP {java\&.lang\&.reflect\&.Method} 
+.br
+\fIarguments\fP 
+.RE
+.PP
+
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.injectSimulations ()"
+Inject simulations 
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.logError (String details)"
+Log error to the HTML report\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdetails\fP {String} 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.logInfo (String details)"
+Log information messages to the HTML report\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdetails\fP {String} 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.logWarn (String details)"
+Log warnings to the HTML report\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdetails\fP {String} 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.maximizeWindow ()"
+Maximize the window\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP is maximize operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.navigateBack ()"
+Navigate Back
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP if navigation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.open (String url)"
+Open URL\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIurl\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP if URL is opened successfully\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.refresh ()"
+Refresh the window\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP if window refresh operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.resetTests ()"
+Re-initialize the list of Galen tests\&. 
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.setSize (int width, int height)"
+Set the size of the browser window\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwidth\fP {int} - Width of the browser window\&. 
+.br
+\fIheight\fP {int} - Height of the browser window\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Returns \fCtrue\fP if browser window size is set\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.switchToDefault ()"
+Switch to default window\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP if window switch operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.switchToNewFrame (Object element)"
+Switch to a new Frame\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {String} - Path to the frame\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP if window switch operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.switchToNewFrame (Object element, int period)"
+Switch to a new Frame\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIperiod\fP {int} - timeout for visibility of frame 
+.br
+\fIelement\fP {String} - Path to the frame\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP if window switch operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.switchToWindow (String windowHandle)"
+Switch to a new window\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIwindowHandle\fP {String} 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - Return \fCtrue\fP if window switch operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.updateTestInfo (Method method)"
+Update test name that is displayed on the HTML report\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fImethod\fP {java\&.lang\&.reflect\&.Method} 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "void com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.updateTestInfo (String method)"
+Update test name that is displayed on the HTML report\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fImethod\fP {String} 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.verifyPageLayout (String layoutTitle, String specPath, List< String > includedTags)"
+Verifies the layout of the page (Uses Galen Framework)
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlayoutDesc\fP {String} - Description for the layout verification\&.
+.br
+\fIspecPath\fP {String} - Path to UI specifications
+.br
+\fIincludedTags\fP {List} - A list of tags that should be included in specifications\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - Returns a list of UI errors in a String format\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.verifyPageLayout (String layoutTitle, String specPath, List< String > includedTags, Map< String, Object > vars)"
+Verifies the layout of the page (Uses Galen Framework)
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlayoutDesc\fP {String} - Description for the layout verification\&.
+.br
+\fIspecPath\fP {String} - Path to UI specifications
+.br
+\fIincludedTags\fP {List} - A list of tags that should be included in specifications\&.
+.br
+\fIvars\fP {Map<String, Object>} - JavaScript variables that will be available in special galen spec expressions
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - Returns a list of UI errors in a String format\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IWindowOperations\&.verifyPageLayout (String layoutDesc, String specPath, SectionFilter sectionFilter, Properties properties, Map< String, Object > vars)"
+Verifies the layout of the page (Uses Galen Framework)
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlayoutDesc\fP {String} - Description for the layout verification\&.
+.br
+\fIspecPath\fP {String} - Path to UI specifications
+.br
+\fIsectionFilter\fP {SectionFilter} - A filter that is used for '@on' filtering in specification files\&.
+.br
+\fIproperties\fP {Properties} - A set of properties that will be accessible in special galen spec expressions\&.
+.br
+\fIvars\fP {Map<String, Object>} - JavaScript variables that will be available in special galen spec expressions
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - Returns a list of UI errors in a String format\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.BrowserWindow\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

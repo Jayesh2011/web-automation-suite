@@ -1,0 +1,10 @@
+<map id="com.zeuslearning.automation.unittests.Cengage_4844" name="com.zeuslearning.automation.unittests.Cengage_4844">
+<area shape="rect" id="node2" href="$d4/d41/interfacecom_1_1zeuslearning_1_1automation_1_1driver_1_1IDriver.html" title="com.zeuslearning.automation.driver.\lIDriver" alt="" coords="23,5,254,47"/>
+<area shape="rect" id="node3" href="$dc/d90/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IQueryHtmlElement.html" title="com.zeuslearning.automation.interactions.\lIQueryHtmlElement" alt="" coords="5,71,272,112"/>
+<area shape="rect" id="node4" href="$db/d90/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IMouseOperations.html" title="com.zeuslearning.automation.interactions.\lIMouseOperations" alt="" coords="5,136,272,177"/>
+<area shape="rect" id="node5" href="$d9/d3a/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IVerifications.html" title="com.zeuslearning.automation.interactions.\lIVerifications" alt="" coords="5,201,272,243"/>
+<area shape="rect" id="node6" href="$d0/dfa/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDragDropOperations.html" title="com.zeuslearning.automation.interactions.\lIDragDropOperations" alt="" coords="5,267,272,308"/>
+<area shape="rect" id="node7" href="$d1/d29/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IKeyboardOperations.html" title="com.zeuslearning.automation.interactions.\lIKeyboardOperations" alt="" coords="5,332,272,373"/>
+<area shape="rect" id="node10" href="$d1/de3/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWaitOperations.html" title="com.zeuslearning.automation.interactions.\lIWaitOperations" alt="" coords="5,500,272,541"/>
+<area shape="rect" id="node11" href="$d3/d71/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWindowOperations.html" title="com.zeuslearning.automation.interactions.\lIWindowOperations" alt="" coords="5,565,272,607"/>
+</map>

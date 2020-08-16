@@ -1,0 +1,6 @@
+<map id="com.zeuslearning.automation.selenium.interactions.Mouse.doubleClickUsingCodeWithTwoClicks" name="com.zeuslearning.automation.selenium.interactions.Mouse.doubleClickUsingCodeWithTwoClicks">
+<area shape="rect" id="node2" href="$d0/dfa/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Mouse.html#a208023bff8f5799e5e61dfaa190d5feb" title="com.zeuslearning.automation.selenium.interactions.\lMouse.mouseDown" alt="" coords="376,5,699,47"/>
+<area shape="rect" id="node5" href="$d0/dfa/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Mouse.html#a0b7f2ca5dafa810dc0a0ec1669f40fef" title="com.zeuslearning.automation.selenium.interactions.\lMouse.mouseUp" alt="" coords="376,71,699,112"/>
+<area shape="rect" id="node3" href="$d3/d71/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IWindowOperations.html#a6f5627a3145238d63f310c22d2e3c6e5" title="com.zeuslearning.automation.interactions.\lIWindowOperations.checkAndInjectSimulations" alt="" coords="747,5,1041,47"/>
+<area shape="rect" id="node4" href="$de/d14/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IExecuteJavascript.html#a2460e236de6afd1c685b77700474b901" title="com.zeuslearning.automation.interactions.\lIExecuteJavascript.executeScript" alt="" coords="761,71,1027,112"/>
+</map>

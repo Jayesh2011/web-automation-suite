@@ -1,0 +1,142 @@
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations}{}\section{com.\+zeuslearning.\+automation.\+interactions.\+I\+Drop\+Down\+Operations Interface Reference}
+\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations}\index{com.\+zeuslearning.\+automation.\+interactions.\+I\+Drop\+Down\+Operations@{com.\+zeuslearning.\+automation.\+interactions.\+I\+Drop\+Down\+Operations}}
+
+
+Inheritance diagram for com.\+zeuslearning.\+automation.\+interactions.\+I\+Drop\+Down\+Operations\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{dc/d60/interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_acab57addaabfe48b82367a8a5a605d8e}{select\+Option\+By\+Text} (Object element, String option)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_ad895dc1fcaa582ece4c02e9102dd73c8}{select\+Option\+By\+Index} (Object element, int index)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_aa8d8cc39ebf833405a20ff1966d07b6b}{select\+Option\+By\+Value} (Object element, String value)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_add4d06e1de28d263d9451d67936c0324}{click\+On\+Hover\+Menu\+Option} (Object element, Object option)
+\item 
+boolean \hyperlink{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_a4dd56924f06c48807581673c5c757405}{deselect\+All\+Options} (Object locator)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_add4d06e1de28d263d9451d67936c0324}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_add4d06e1de28d263d9451d67936c0324} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}!click\+On\+Hover\+Menu\+Option@{click\+On\+Hover\+Menu\+Option}}
+\index{click\+On\+Hover\+Menu\+Option@{click\+On\+Hover\+Menu\+Option}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}}
+\subsubsection{\texorpdfstring{click\+On\+Hover\+Menu\+Option()}{clickOnHoverMenuOption()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Drop\+Down\+Operations.\+click\+On\+Hover\+Menu\+Option (\begin{DoxyParamCaption}\item[{Object}]{element,  }\item[{Object}]{option }\end{DoxyParamCaption})}
+
+Handles dropdown list that expand on mouse roll over.
+
+Operation\+: Move the mouse pointer on a dropdown list (\textquotesingle{}element\textquotesingle{}) that expands on mouse roll-\/over and select an option ({\ttfamily option}). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Path to dropdown list. \\
+\hline
+{\em option} & \{object\} -\/ Path to one of the visible options.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ returns {\ttfamily true} if selection is successful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1DropDown_ab27460ee736614dfc1c93b57b98aadc2}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Drop\+Down}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_a4dd56924f06c48807581673c5c757405}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_a4dd56924f06c48807581673c5c757405} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}!deselect\+All\+Options@{deselect\+All\+Options}}
+\index{deselect\+All\+Options@{deselect\+All\+Options}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}}
+\subsubsection{\texorpdfstring{deselect\+All\+Options()}{deselectAllOptions()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Drop\+Down\+Operations.\+deselect\+All\+Options (\begin{DoxyParamCaption}\item[{Object}]{locator }\end{DoxyParamCaption})}
+
+Deselects all the selected options of a multi-\/select element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Path to dropdown list.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ returns {\ttfamily true} if deselection is successful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1DropDown_aaf41adc5687eae5fd1980fa34b583a5f}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Drop\+Down}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_ad895dc1fcaa582ece4c02e9102dd73c8}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_ad895dc1fcaa582ece4c02e9102dd73c8} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}!select\+Option\+By\+Index@{select\+Option\+By\+Index}}
+\index{select\+Option\+By\+Index@{select\+Option\+By\+Index}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}}
+\subsubsection{\texorpdfstring{select\+Option\+By\+Index()}{selectOptionByIndex()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Drop\+Down\+Operations.\+select\+Option\+By\+Index (\begin{DoxyParamCaption}\item[{Object}]{element,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+Select an option from the dropdown list by index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Dropdown list. \\
+\hline
+{\em index} & \{int\} -\/ index value of the option to be selected.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ returns {\ttfamily true} if selection is successful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1DropDown_a90eaa639ff1980274aa7e27a29ad7230}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Drop\+Down}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_acab57addaabfe48b82367a8a5a605d8e}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_acab57addaabfe48b82367a8a5a605d8e} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}!select\+Option\+By\+Text@{select\+Option\+By\+Text}}
+\index{select\+Option\+By\+Text@{select\+Option\+By\+Text}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}}
+\subsubsection{\texorpdfstring{select\+Option\+By\+Text()}{selectOptionByText()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Drop\+Down\+Operations.\+select\+Option\+By\+Text (\begin{DoxyParamCaption}\item[{Object}]{element,  }\item[{String}]{option }\end{DoxyParamCaption})}
+
+Select an option from the dropdown list by visible text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Dropdown list. \\
+\hline
+{\em option} & \{String\} -\/ One of the visible options.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ returns {\ttfamily true} if selection is successful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1DropDown_aa7c95fbe76e90d922c20459d6917e57e}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Drop\+Down}.
+
+\hypertarget{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_aa8d8cc39ebf833405a20ff1966d07b6b}{}\label{interfacecom_1_1zeuslearning_1_1automation_1_1interactions_1_1IDropDownOperations_aa8d8cc39ebf833405a20ff1966d07b6b} 
+\index{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}!select\+Option\+By\+Value@{select\+Option\+By\+Value}}
+\index{select\+Option\+By\+Value@{select\+Option\+By\+Value}!com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations@{com\+::zeuslearning\+::automation\+::interactions\+::\+I\+Drop\+Down\+Operations}}
+\subsubsection{\texorpdfstring{select\+Option\+By\+Value()}{selectOptionByValue()}}
+{\footnotesize\ttfamily boolean com.\+zeuslearning.\+automation.\+interactions.\+I\+Drop\+Down\+Operations.\+select\+Option\+By\+Value (\begin{DoxyParamCaption}\item[{Object}]{element,  }\item[{String}]{value }\end{DoxyParamCaption})}
+
+Select an option from the dropdown list by value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \{Object\} -\/ Dropdown list. \\
+\hline
+{\em value} & \{String\} -\/ index value of the option to be selected.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} -\/ returns {\ttfamily true} if selection is successful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1DropDown_a192726c41689be2fd5ee44ad49262950}{com.\+zeuslearning.\+automation.\+selenium.\+interactions.\+Drop\+Down}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+G\+I\+T/automation-\/common/src/java/com/zeuslearning/automation/interactions/I\+Drop\+Down\+Operations.\+java\end{DoxyCompactItemize}

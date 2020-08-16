@@ -1,0 +1,125 @@
+.TH "com.zeuslearning.automation.interactions.IDropDownOperations" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.interactions.IDropDownOperations \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DropDown\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBselectOptionByText\fP (Object element, String option)"
+.br
+.ti -1c
+.RI "boolean \fBselectOptionByIndex\fP (Object element, int index)"
+.br
+.ti -1c
+.RI "boolean \fBselectOptionByValue\fP (Object element, String value)"
+.br
+.ti -1c
+.RI "boolean \fBclickOnHoverMenuOption\fP (Object element, Object option)"
+.br
+.ti -1c
+.RI "boolean \fBdeselectAllOptions\fP (Object locator)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDropDownOperations\&.clickOnHoverMenuOption (Object element, Object option)"
+Handles dropdown list that expand on mouse roll over\&.
+.PP
+Operation: Move the mouse pointer on a dropdown list ('element') that expands on mouse roll-over and select an option (\fCoption\fP)\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to dropdown list\&. 
+.br
+\fIoption\fP {object} - Path to one of the visible options\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if selection is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DropDown\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDropDownOperations\&.deselectAllOptions (Object locator)"
+Deselects all the selected options of a multi-select element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to dropdown list\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if deselection is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DropDown\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDropDownOperations\&.selectOptionByIndex (Object element, int index)"
+Select an option from the dropdown list by index\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Dropdown list\&. 
+.br
+\fIindex\fP {int} - index value of the option to be selected\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if selection is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DropDown\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDropDownOperations\&.selectOptionByText (Object element, String option)"
+Select an option from the dropdown list by visible text\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Dropdown list\&. 
+.br
+\fIoption\fP {String} - One of the visible options\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if selection is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DropDown\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDropDownOperations\&.selectOptionByValue (Object element, String value)"
+Select an option from the dropdown list by value\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Dropdown list\&. 
+.br
+\fIvalue\fP {String} - index value of the option to be selected\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if selection is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DropDown\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

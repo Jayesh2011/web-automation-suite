@@ -1,0 +1,72 @@
+.TH "com.zeuslearning.automation.io.TextFileOps" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.io.TextFileOps \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.zeuslearning\&.automation\&.io\&.BasicFileOps\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTextFileOps\fP (Object driver)"
+.br
+.ti -1c
+.RI "void \fBopenFile\fP (String fileName)  throws IOException "
+.br
+.ti -1c
+.RI "String \fBreadAll\fP (String filePath)  throws Exception "
+.br
+.ti -1c
+.RI "String \fBreadAll\fP (File fileName)  throws Exception "
+.br
+.ti -1c
+.RI "String [] \fBreadAllParagraphs\fP (File fileName)  throws Exception "
+.br
+.ti -1c
+.RI "String [] \fBreadAllParagraphs\fP (String filePath)  throws Exception "
+.br
+.ti -1c
+.RI "String \fBreadJsFiles\fP (String filePath)"
+.br
+.ti -1c
+.RI "String \fBreadPdf\fP ()  throws IOException "
+.br
+.ti -1c
+.RI "boolean \fBwrite\fP (File fileName, String data)  throws IOException "
+.br
+.ti -1c
+.RI "boolean \fBappend\fP (String data)  throws IOException "
+.br
+.ti -1c
+.RI "boolean \fBcloseFile\fP ()  throws IOException "
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBQueryHtml\fP \fBquery\fP"
+.br
+.ti -1c
+.RI "FileWriter \fBfileWriter\fP"
+.br
+.ti -1c
+.RI "BufferedWriter \fBbufferedWriter\fP"
+.br
+.ti -1c
+.RI "String \fBtext\fP"
+.br
+.ti -1c
+.RI "File \fBfile\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

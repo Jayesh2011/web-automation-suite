@@ -1,0 +1,540 @@
+<Project>
+  <Name>Automation Framework</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>com.zeuslearning.automation.driver</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>SeliniumDriver</Name>
+        <Access>Public</Access>
+        <Location left="153" top="222" />
+        <Size width="162" height="196" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public WebDriver _driver</Member>
+        <Member type="Constructor">public SeliniumDriver()</Member>
+        <Member type="Method">private boolean initializeDriver()</Member>
+        <Member type="Method">WebDriver getDriver()</Member>
+        <Member type="Method">boolean closeWindow()</Member>
+        <Member type="Method">boolean quitDriver()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IInitializeDriver</Name>
+        <Access>Public</Access>
+        <Location left="154" top="10" />
+        <Size width="162" height="150" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean initializeDriver()</Member>
+        <Member type="Method">WebDriver getDriver()</Member>
+        <Member type="Method">boolean closeWindow()</Member>
+        <Member type="Method">boolean quitDriver()</Member>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Realization" first="0" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>com.zeuslearning.automation.interactions</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Timeout</Name>
+        <Access>Public</Access>
+        <Location left="40" top="665" />
+        <Size width="357" height="196" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean waitForVisibilityOf(IElement element)</Member>
+        <Member type="Method">boolean waitForInvisibilityOf(IElement element)</Member>
+        <Member type="Method">boolean waitForVisibilityOf(IElement element, int timeout)</Member>
+        <Member type="Method">boolean waitForInvisibilityOf(IElement element, int timeout)</Member>
+        <Member type="Method">boolean waitForElementToBeClickable(IElement element)</Member>
+        <Member type="Method">boolean waitForElementToBeClickable(IElement element, int timeout)</Member>
+        <Member type="Method">boolean waitForElementToBePresent(IElement element)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Keyboard</Name>
+        <Access>Public</Access>
+        <Location left="1194" top="665" />
+        <Size width="320" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean multipleKeyStrokes()</Member>
+        <Member type="Method">boolean typeIntoField(IElement field, String values)</Member>
+        <Member type="Method">boolean typeInLargeDataValue(IElement element, String value)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Mouse</Name>
+        <Access>Public</Access>
+        <Location left="779" top="665" />
+        <Size width="275" height="213" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean pageScroll(int xVal, int yVal)</Member>
+        <Member type="Method">boolean click(IElement element)</Member>
+        <Member type="Method">boolean clickUsingCode(IElement element)</Member>
+        <Member type="Method">boolean doubleClick(IElement element)</Member>
+        <Member type="Method">boolean mouseOver(IElement element)</Member>
+        <Member type="Method">boolean clickAllElementsLocatedBy(IElement element)</Member>
+        <Member type="Method">boolean scroll(IElement element)</Member>
+        <Member type="Method">boolean scroll(int xVal, int yVal)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>HtmlAlertOps</Name>
+        <Access>Public</Access>
+        <Location left="18" top="260" />
+        <Size width="221" height="179" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Alert _alertHandle</Member>
+        <Member type="Method">boolean dismissAlert()</Member>
+        <Member type="Method">boolean acceptAlert()</Member>
+        <Member type="Method">String getAlertText()</Member>
+        <Member type="Method">boolean sendPromptText(String text)</Member>
+        <Member type="Method">Alert switchToAlert()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DragDrop</Name>
+        <Access>Public</Access>
+        <Location left="602" top="993" />
+        <Size width="309" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public boolean dragDrop(By source, By target)</Member>
+        <Member type="Method">public boolean dragDrop(By source, int xOffset, int yOffset)</Member>
+        <Member type="Method">boolean dragDropUsingCode(By source, By destination)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DropDown</Name>
+        <Access>Public</Access>
+        <Location left="945" top="993" />
+        <Size width="446" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean selectOptionByText(IElement element, String text)</Member>
+        <Member type="Method">boolean clickOnHoverMenuOption(IElement menuPath, IElement menuOptionPath)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BrowserWindow</Name>
+        <Access>Public</Access>
+        <Location left="1383" top="35" />
+        <Size width="315" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String _windowHandle</Member>
+        <Member type="Method">boolean switchToNewWindow()</Member>
+        <Member type="Method">boolean switchBackToPreviousWindow()</Member>
+        <Member type="Method">boolean switchToNewFrameByWebElement(By element)</Member>
+        <Member type="Method">boolean switchToNewFrameByIndex(int frameIndex)</Member>
+        <Member type="Method">boolean switchToNewFrameByName(String frameName)</Member>
+        <Member type="Method">boolean switchToDefault()</Member>
+        <Member type="Method">boolean maximizeWindow()</Member>
+        <Member type="Method">boolean refresh()</Member>
+        <Member type="Method">boolean navigateBack()</Member>
+        <Member type="Method">boolean open(String url)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Verifications</Name>
+        <Access>Public</Access>
+        <Location left="1553" top="665" />
+        <Size width="311" height="196" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public boolean isAlertPresent()</Member>
+        <Member type="Method">public boolean isStringMatch(String actual, String expected)</Member>
+        <Member type="Method">public boolean isTitleEqualTo(String expectedTitle)</Member>
+        <Member type="Method">public boolean compareStrings()</Member>
+        <Member type="Method">boolean isSelected(IElement element)</Member>
+        <Member type="Method">boolean isEnabled(IElement element)</Member>
+        <Member type="Method">boolean isElementDisplayed(IElement element)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>QueryHtml</Name>
+        <Access>Public</Access>
+        <Location left="504" top="232" />
+        <Size width="329" height="213" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">WebElement findElement(By locator)</Member>
+        <Member type="Method">list&lt;WebElement&gt; findElements(By locator)</Member>
+        <Member type="Method">String getAttributes(By locator, String attributeName)</Member>
+        <Member type="Method">String getInnerHtml(By locator)</Member>
+        <Member type="Method">public String getTitle()</Member>
+        <Member type="Method">public String getText(By element)</Member>
+        <Member type="Method">String getUrl()</Member>
+        <Member type="Method">Dimension getDimensionsOfElementLocatedBy(By element)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IQueryHtmlElement</Name>
+        <Access>Public</Access>
+        <Location left="504" top="12" />
+        <Size width="328" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">String getAttributes(By locator, String attributeName)</Member>
+        <Member type="Method">String getInnerHtml(By locator)</Member>
+        <Member type="Method">public String getTitle()</Member>
+        <Member type="Method">String getUrl()</Member>
+        <Member type="Method">public Dimension getDimensionsOfElementLocatedBy(IElement element)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IAlertOperations</Name>
+        <Access>Public</Access>
+        <Location left="18" top="12" />
+        <Size width="228" height="179" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean dismissAlert()</Member>
+        <Member type="Method">public boolean acceptAlert()</Member>
+        <Member type="Method">public String getAlertText()</Member>
+        <Member type="Method">public boolean sendPromptText(String text)</Member>
+        <Member type="Method">public Alert switchToAlert()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IWindowOperations</Name>
+        <Access>Public</Access>
+        <Location left="932" top="35" />
+        <Size width="315" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean switchToNewWindow()</Member>
+        <Member type="Method">boolean switchBackToPreviousWindow()</Member>
+        <Member type="Method">boolean switchToNewFrameByWebElement(IElement element)</Member>
+        <Member type="Method">boolean switchToNewFrameByIndex(int frameIndex)</Member>
+        <Member type="Method">boolean switchToNewFrameByName(String frameName)</Member>
+        <Member type="Method">boolean switchToDefault()</Member>
+        <Member type="Method">boolean maximizeWindow()</Member>
+        <Member type="Method">boolean refresh()</Member>
+        <Member type="Method">boolean navigateBack()</Member>
+        <Member type="Method">boolean open(String url)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IWaitOperations</Name>
+        <Access>Public</Access>
+        <Location left="40" top="944" />
+        <Size width="356" height="197" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean waitForVisibilityOf(IElement element)</Member>
+        <Member type="Method">boolean waitForInvisibilityOf(IElement element)</Member>
+        <Member type="Method">boolean waitForVisibilityOf(IElement element, int timeout)</Member>
+        <Member type="Method">boolean waitForInvisibilityOf(IElement element, int timeout)</Member>
+        <Member type="Method">boolean waitForElementToBeClickable(IElement element)</Member>
+        <Member type="Method">boolean waitForElementToBeClickable(IElement element, int timeout)</Member>
+        <Member type="Method">boolean waitForElementToBePresent(IElement element)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IMouseOperations</Name>
+        <Access>Public</Access>
+        <Location left="447" top="665" />
+        <Size width="274" height="196" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean click(IElement element)</Member>
+        <Member type="Method">boolean clickUsingCode(IElement element)</Member>
+        <Member type="Method">boolean doubleClick(IElement element)</Member>
+        <Member type="Method">boolean mouseOver(IElement element)</Member>
+        <Member type="Method">boolean clickAllElementsLocatedBy(IElement element)</Member>
+        <Member type="Method">boolean scroll(IElement element)</Member>
+        <Member type="Method">boolean scroll(int xVal, int yVal)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IKeyboardOperations</Name>
+        <Access>Public</Access>
+        <Location left="1194" top="850" />
+        <Size width="320" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean typeIntoField(IElement field, String values)</Member>
+        <Member type="Method">boolean typeInLargeDataValue(IElement element, String value)</Member>
+        <Member type="Method">boolean multipleKeyStrokes()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IVerifications</Name>
+        <Access>Public</Access>
+        <Location left="1553" top="911" />
+        <Size width="311" height="196" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public boolean isAlertPresent()</Member>
+        <Member type="Method">public boolean isStringMatch(String actual, String expected)</Member>
+        <Member type="Method">public boolean isSelected(IElement element)</Member>
+        <Member type="Method">public boolean isTitleEqualTo(String expectedTitle)</Member>
+        <Member type="Method">public boolean isEnabled(IElement element)</Member>
+        <Member type="Method">public boolean isElementDisplayed(IElement element)</Member>
+        <Member type="Method">public boolean compareStrings()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IDragDropOperations</Name>
+        <Access>Public</Access>
+        <Location left="602" top="1213" />
+        <Size width="308" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public boolean dragDrop(By source, By target)</Member>
+        <Member type="Method">public boolean dragDrop(By source, int xOffset, int yOffset)</Member>
+        <Member type="Method">public boolean dragDropUsingCode(By source, By destination)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IDropDownOperations</Name>
+        <Access>Public</Access>
+        <Location left="945" top="1213" />
+        <Size width="383" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public boolean selectOptionByText(IElement element, String text)</Member>
+        <Member type="Method">public boolean clickOnHoverMenuOption(IElement menuPath, IElement menuOptionPath)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IQueryElement</Name>
+        <Access>Public</Access>
+        <Location left="271" top="12" />
+        <Size width="162" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">IElement findElement(By locator)</Member>
+        <Member type="Method">list&lt;IElement&gt; findElements(By locator)</Member>
+        <Member type="Method">public String getTitle()</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IElement</Name>
+        <Access>Public</Access>
+        <Location left="116" top="1213" />
+        <Size width="162" height="128" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void reset()</Member>
+        <Member type="Method">void setData(object data)</Member>
+        <Member type="Method">object getData()</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>HtmlElement</Name>
+        <Access>Public</Access>
+        <Location left="371" top="1201" />
+        <Size width="162" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void reset()</Member>
+        <Member type="Method">void setData(object data)</Member>
+        <Member type="Method">object getData()</Member>
+        <Member type="Method">HtmlElement getData()</Member>
+        <Member type="Method">void setData(HtmlElement element)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Realization" first="3" second="10">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="8" second="9">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="0" second="12">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="1" second="14">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="7" second="15">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="0" second="8">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="1" second="8">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1356</X>
+          <Y>597</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>668</X>
+          <Y>514</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="7" second="8">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="4" second="16">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="5" second="17">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="2" second="13">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="8">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>915</X>
+          <Y>639</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>668</X>
+          <Y>474</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="9" second="18">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>758</X>
+          <Y>968</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1136</X>
+          <Y>968</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="6" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="20" second="19">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>com.zeuslearning.automation.io</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>ReadConfigFiles</Name>
+        <Access>Public</Access>
+        <Location left="1015" top="833" />
+        <Size width="162" height="77" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ScreenCapture</Name>
+        <Access>Public</Access>
+        <Location left="433" top="416" />
+        <Size width="261" height="104" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public boolean capture(String name, Rectangle coords)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ExcelFileOps</Name>
+        <Access>Public</Access>
+        <Location left="516" top="655" />
+        <Size width="169" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">String readAll()</Member>
+        <Member type="Method">boolean write(String data)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TextFileOps</Name>
+        <Access>Public</Access>
+        <Location left="769" top="654" />
+        <Size width="167" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">String readAll()</Member>
+        <Member type="Method">boolean write(String data)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>JSONFileOps</Name>
+        <Access>Public</Access>
+        <Location left="1004" top="655" />
+        <Size width="169" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">String readAll()</Member>
+        <Member type="Method">boolean write(String data)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GoogleSpreadsheet</Name>
+        <Access>Public</Access>
+        <Location left="516" top="833" />
+        <Size width="162" height="77" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>IInputOutputOps</Name>
+        <Access>Public</Access>
+        <Location left="759" top="46" />
+        <Size width="185" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">boolean close()</Member>
+        <Member type="Method">boolean open(object source)</Member>
+        <Member type="Method">boolean open(String source)</Member>
+        <Member type="Method">String read()</Member>
+        <Member type="Method">Object read()</Member>
+        <Member type="Method">object readAll()</Member>
+        <Member type="Method">String readAll()</Member>
+        <Member type="Method">boolean reset()</Member>
+        <Member type="Method">boolean write(object data)</Member>
+        <Member type="Method">boolean write(String data)</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>BasicFileOps</Name>
+        <Access>Public</Access>
+        <Location left="762" top="348" />
+        <Size width="181" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">protected File _fileHandle</Member>
+        <Member type="Method">boolean close()</Member>
+        <Member type="Method">boolean open(object source)</Member>
+        <Member type="Method">boolean open(String source)</Member>
+        <Member type="Method">Object read()</Member>
+        <Member type="Method">object readAll()</Member>
+        <Member type="Method">String readAll()</Member>
+        <Member type="Method">boolean reset()</Member>
+        <Member type="Method">boolean write(object data)</Member>
+        <Member type="Method">boolean write(String data)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Realization" first="7" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="0" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="1" second="7">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

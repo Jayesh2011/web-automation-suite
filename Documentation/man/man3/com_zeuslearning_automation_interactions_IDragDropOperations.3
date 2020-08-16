@@ -1,0 +1,167 @@
+.TH "com.zeuslearning.automation.interactions.IDragDropOperations" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.interactions.IDragDropOperations \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DragDrop\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBdragDrop\fP (Object source, Object target)"
+.br
+.ti -1c
+.RI "boolean \fBdragDropUsingCode\fP (Object sourceLocator, Object targetLocator)"
+.br
+.ti -1c
+.RI "boolean \fBdragDropUsingCode\fP (Object sourceLocator, Object targetLocator, int stepWidth, int stepDelay)"
+.br
+.ti -1c
+.RI "boolean \fBdragDrop\fP (Object source, int xOffset, int yOffset)"
+.br
+.ti -1c
+.RI "boolean \fBdragDropUsingCode\fP (Object sourceLocator, int xOffset, int yOffset, int stepWidth, int stepDelay)"
+.br
+.ti -1c
+.RI "boolean \fBdragDropUsingPostionsInsideElement\fP (Object locator, int xOffset, int yOffset, int dx, int dy, int stepWidth, int stepDelay)"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDragDropOperations\&.dragDrop (Object source, Object target)"
+Drag an Element from \fCsource\fP to \fCtarget\fP\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsource\fP {Object} - Drag an Element present at the \fCsource\fP\&. 
+.br
+\fItarget\fP {Object} - Drag the Element to the \fCtarget\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if drag operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DragDrop\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDragDropOperations\&.dragDrop (Object source, int xOffset, int yOffset)"
+Move an Element at \fCsource\fP by \fCxOffset\fP along the X-Axis and by \fCyOffset\fP along the Y-Axis\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsource\fP {Object} - Drag an Element present at the \fCsource\fP\&. 
+.br
+\fIxOffset\fP {int} - Offset along the X-Axis\&. 
+.br
+\fIyOffset\fP {int} - Offset along the Y-Axis\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if drag operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DragDrop\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDragDropOperations\&.dragDropUsingCode (Object sourceLocator, Object targetLocator)"
+Drag an Element from \fCsource\fP to \fCtarget\fP\&. (Uses jquery-simulations, github url: https://github.com/j-ulrich/jquery-simulate-ext)
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsource\fP {Object} - Drag an Element present at the \fCsource\fP\&. 
+.br
+\fItarget\fP {Object} - Drag the Element to the \fCtarget\fP\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if drag operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DragDrop\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDragDropOperations\&.dragDropUsingCode (Object sourceLocator, Object targetLocator, int stepWidth, int stepDelay)"
+Drag an Element from \fCsource\fP to \fCtarget\fP\&. (Uses jquery-simulations, github url: https://github.com/j-ulrich/jquery-simulate-ext)
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsource\fP {Object} - Drag an Element present at the \fCsource\fP\&. 
+.br
+\fItarget\fP {Object} - Drag the Element to the \fCtarget\fP\&. 
+.br
+\fIstepWidth\fP {Object} - divide the drag drop action into no of steps\&. 
+.br
+\fIstepDelay\fP {Object} - delay among steps\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if drag operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DragDrop\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDragDropOperations\&.dragDropUsingCode (Object sourceLocator, int xOffset, int yOffset, int stepWidth, int stepDelay)"
+Move an Element at \fCsource\fP by \fCxOffset\fP along the X-Axis and by \fCyOffset\fP along the Y-Axis\&. (Uses jquery-simulations, github url: https://github.com/j-ulrich/jquery-simulate-ext)
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsource\fP {Object} - Drag an Element present at the \fCsource\fP\&. 
+.br
+\fIxOffset\fP {int} - Offset along the X-Axis\&. 
+.br
+\fIyOffset\fP {int} - Offset along the Y-Axis\&. 
+.br
+\fIstepWidth\fP {Object} - divide the drag drop action into no of steps\&. 
+.br
+\fIstepDelay\fP {Object} - delay among steps\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} - returns \fCtrue\fP if drag operation is successful\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DragDrop\fP\&.
+.SS "boolean com\&.zeuslearning\&.automation\&.interactions\&.IDragDropOperations\&.dragDropUsingPostionsInsideElement (Object locator, int xOffset, int yOffset, int dx, int dy, int stepWidth, int stepDelay)"
+Drag inside an element from one position\fCxOffset\fP along the X-Axis and by \fCyOffset\fP along the Y-Axis and move by \fCdx\fP along the X-Axis and by \fCdy\fP along the Y-Axis and drop\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Drag inside an Element present at the \fClocator\fP\&. 
+.br
+\fIxOffset\fP {int} - start position along the X-Axis\&. 
+.br
+\fIyOffset\fP {int} - end position along the Y-Axis\&. 
+.br
+\fIdx\fP {int} - pixels to move along the X-Axis\&. 
+.br
+\fIdy\fP {int} - pixels to move along the Y-Axis\&. 
+.br
+\fIstepWidth\fP {Object} - divide the drag drop action into no of steps\&. 
+.br
+\fIstepDelay\fP {Object} - delay among steps\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.DragDrop\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

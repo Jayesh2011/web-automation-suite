@@ -1,0 +1,320 @@
+.TH "com.zeuslearning.automation.interactions.IQueryHtmlElement" 3 "Fri Mar 9 2018" "Automation Common" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.zeuslearning.automation.interactions.IQueryHtmlElement \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "Object \fBfindElement\fP (Object locator)"
+.br
+.ti -1c
+.RI "List< Object > \fBfindElements\fP (Object locator)"
+.br
+.ti -1c
+.RI "Object \fBfindElementWithinElement\fP (Object element, Object locator)"
+.br
+.ti -1c
+.RI "String \fBgetAttributes\fP (Object locator, String attributeName)"
+.br
+.ti -1c
+.RI "String \fBgetCss\fP (Object locator, String propertyName)"
+.br
+.ti -1c
+.RI "String \fBgetTitle\fP ()"
+.br
+.ti -1c
+.RI "Object \fBgetDimensionsOfElementLocatedBy\fP (Object element)"
+.br
+.ti -1c
+.RI "Object \fBgetHeightOfElement\fP (Object locator)"
+.br
+.ti -1c
+.RI "Object \fBgetWidthOfElement\fP (Object locator)"
+.br
+.ti -1c
+.RI "String \fBgetText\fP (Object locator)"
+.br
+.ti -1c
+.RI "String \fBgetText\fP (Object locator, int index)"
+.br
+.ti -1c
+.RI "String \fBgetUrl\fP ()"
+.br
+.ti -1c
+.RI "Object \fBgetCoordinates\fP (Object locator)"
+.br
+.ti -1c
+.RI "Object \fBgetXCoordinates\fP (Object locator)"
+.br
+.ti -1c
+.RI "Object \fBgetYCoordinates\fP (Object locator)"
+.br
+.ti -1c
+.RI "String \fBgetBrowserName\fP ()"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.findElement (Object locator)"
+Find an element located by the specified path\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns an element object located by \fClocator\fP\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "List<Object> com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.findElements (Object locator)"
+Find all the elements located by the specified path\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to elements\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{List<Object>} - Returns a list of element objects located by \fClocator\fP\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.findElementWithinElement (Object element, Object locator)"
+Find an element located by the specified path within another element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Parent Element\&.
+.br
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns an element object located by \fClocator\fP\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getAttributes (Object locator, String attributeName)"
+Get the attribute \fCattributeName\fP\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIattributeName\fP {String} - Attribute to be determined\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - Attribute attached to the element\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getBrowserName ()"
+Returns browser name\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - Name of the browser 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getCoordinates (Object locator)"
+Returns the coordinates of the top left-hand corner of the rendered element
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns a point, containing the location of the top left-hand corner of the element 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getCss (Object locator, String propertyName)"
+Get the css property \fCpropertyName\fP\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.br
+\fIpropertyName\fP {String} - Css property to be determined\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - Css property of the element\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getDimensionsOfElementLocatedBy (Object element)"
+Get the dimensions of the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns the dimensions of the element\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getHeightOfElement (Object locator)"
+Get the height of the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns the height of the element\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getText (Object locator)"
+Get text present inside an element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - Returns element text\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getText (Object locator, int index)"
+Get text present inside an element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP 
+.IP "\(bu" 2
+{Object} - Path of elements\&. 
+.PP
+.br
+\fIindex\fP {int} - index of the element in list of elements found by the locator\&.
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - Returns element text\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getTitle ()"
+Get the title of the activity\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{String} - Title of the activity\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "String com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getUrl ()"
+Returns current page URL\&.
+.PP
+\fBReturns:\fP
+.RS 4
+{String} Current page URL\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getWidthOfElement (Object locator)"
+Get the width of the element\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIelement\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns the width of the element\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getXCoordinates (Object locator)"
+Returns the X coordinate of the top left-hand corner of the rendered element
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns X coordinate value of the top left-hand corner of the element 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+.SS "Object com\&.zeuslearning\&.automation\&.interactions\&.IQueryHtmlElement\&.getYCoordinates (Object locator)"
+Returns the Y coordinate of the top left-hand corner of the rendered element
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlocator\fP {Object} - Path to the element\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Object} - Returns Y coordinate value of the top left-hand corner of the element 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.zeuslearning\&.automation\&.selenium\&.interactions\&.QueryHtml\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Automation Common from the source code\&.

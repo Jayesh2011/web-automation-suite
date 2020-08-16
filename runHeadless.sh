@@ -1,0 +1,1 @@
+java -cp "./resources/Libraries/selenium-server-standalone/selenium-server-standalone-2.53.1.jar:./resources/Libraries/testng/testng-6.10.jar:./resources/Libraries/jcommander/jcommander-1.60.jar:./target/classes" -Dtestng.test.classpath="./target" org.testng.TestNG ./src/java/com/zeuslearning/automation/unittests/testParallelExecution.xml

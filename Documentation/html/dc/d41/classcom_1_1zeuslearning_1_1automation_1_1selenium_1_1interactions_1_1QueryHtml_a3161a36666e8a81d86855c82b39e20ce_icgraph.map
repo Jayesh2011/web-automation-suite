@@ -1,0 +1,5 @@
+<map id="com.zeuslearning.automation.selenium.interactions.QueryHtml.findElements" name="com.zeuslearning.automation.selenium.interactions.QueryHtml.findElements">
+<area shape="rect" id="node2" href="$d0/dfa/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Mouse.html#af29d27d7e5e67708d7b55c955fd873e9" title="com.zeuslearning.automation.selenium.interactions.\lMouse.clickAllElementsLocatedBy" alt="" coords="376,5,699,47"/>
+<area shape="rect" id="node3" href="$d0/dfa/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1Mouse.html#ae7d7e20e0aa4c531d441da986d4fa3f0" title="com.zeuslearning.automation.selenium.interactions.\lMouse.listClick" alt="" coords="376,71,699,112"/>
+<area shape="rect" id="node4" href="$dc/d41/classcom_1_1zeuslearning_1_1automation_1_1selenium_1_1interactions_1_1QueryHtml.html#a3f03bea9d1ab38fb888d2f2c629f297e" title="com.zeuslearning.automation.selenium.interactions.\lQueryHtml.getText" alt="" coords="376,136,699,177"/>
+</map>
